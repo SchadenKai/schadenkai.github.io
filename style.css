@@ -1,13 +1,21 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
 }
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: #030303 !important;
 }
 .bg-black1 {
     background-color: #181818 !important;
+}
+@keyframes floating {
+    0% {top: 10px}
+    50% {bottom: 10px} 
+    100% {top:0px; bottom:0px}
 }
 .cstm-card-1 {
     border-radius: 20px;
@@ -15,8 +23,26 @@ body {
     padding: 1.8rem;
     border: 2px solid #c3c6ce;
     transition: 0.5s ease-in-out;
+    position: relative;
+    animation-name: floating;
+    animation-direction: alternate-reverse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 .cstm-card-1:hover {
     border-color: #008bf8;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}   
+    animation-play-state: paused;
+    transform: scale(1.02);
+    box-shadow: 1px 1px 100px rgb(29, 20, 66);
+}  
+section {
+    margin-top: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    overflow :hidden;
+}
