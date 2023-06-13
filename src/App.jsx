@@ -20,6 +20,7 @@ import LandingPage from "./components/pages/landingPage";
 import TechStack from "./components/pages/techStack";
 import ProjectsPage from "./components/pages/projectsPage";
 import ModelViewer from "./components/modelViewer";
+import ContactsPage from "./components/pages/contactsPage";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,6 +38,7 @@ export default function App() {
             <LandingPage />
             <TechStack />
             <ProjectsPage />
+            <ContactsPage />
           </div>
         </div>
 
