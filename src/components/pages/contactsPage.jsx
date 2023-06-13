@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export default function ContactsPage() {
+export default function ContactsPage({ref}) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,7 +26,7 @@ export default function ContactsPage() {
   };
 
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center h-100 w-100">
+    <div id="contact" className="d-flex flex-column justify-content-center align-items-center h-100 w-100">
       <div className="w-50 d-flex flex-column glass1">
         <h1 className="text-warning mx-4 mt-4">Contact me</h1>
         <p className="mx-4">Get in touch if you want me to be in collaboration or in future projects. I am also currently open and finding an internship for summer.</p>

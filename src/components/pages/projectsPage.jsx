@@ -2,7 +2,7 @@ import { projects } from "../../constants";
 
 export default function ProjectsPage() {
   return (
-    <page className="w-100 d-flex flex-column align-items-center justify-content-center ">
+    <page id="projects" className="w-100 d-flex flex-column align-items-center justify-content-center ">
       <div className="w-50 h-75 p-4 glass1 d-flex flex-column mb-5">
         <h2 className="mb-4">Projects</h2>
         {projects.map((project) => {

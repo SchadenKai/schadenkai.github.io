@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   color: whitesmoke;
   background-color: antiquewhite;
@@ -46,6 +50,7 @@ a {
   -webkit-backdrop-filter: blur(6.4px);
   color: rgb(238, 238, 238);
 }
+
 
 .profile_img {
   -webkit-mask-image : url('./assets/blob.svg');

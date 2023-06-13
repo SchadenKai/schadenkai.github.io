@@ -2,7 +2,7 @@ import {about, socialLinks} from '../../constants/index'
 
 export default function LandingPage() {
   return (
-    <page className="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+    <page id="home" className="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
       <card className="glass1 w-50 h-auto">
         <div className="row h-100 w-100">
           <div className="col-8 py-4 px-5">

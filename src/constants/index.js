@@ -4,6 +4,20 @@ export const about = {
     imageUrl: "./img/profile_img.jpg",
 }
 
+export const navLinks = [
+    {
+        name : "Tech Stack",
+        url : "#tech_stack"
+    }, 
+    {
+        name : "Projects",
+        url : "#projects"
+    },
+    {
+        name : "Contact",
+        url : "#contact"
+    }
+]
 
 export const socialLinks = [
   {

@@ -8,6 +8,7 @@ import ProjectsPage from "./components/pages/projectsPage";
 import ModelViewer from "./components/modelViewer";
 import ContactsPage from "./components/pages/contactsPage";
 import Footer from "./components/layout/footer";
+import Navbar from "./components/layout/navbar"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,11 +18,12 @@ export default function App() {
     <>
       <wrapper className="d-flex flex-column justify-content-center align-items-center h-auto position-relative ">
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 vw-100">
-          {/* <Navbar /> */}
+          <Navbar />
           <div
             style={{ overflowY: "scroll", scrollbarbehavior: "smooth" }}
             className="w-100 h-100"
           >
+            
             <LandingPage />
             <TechStack />
             <ProjectsPage />
