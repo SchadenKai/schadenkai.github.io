@@ -1,0 +1,65 @@
+body {
+  color: whitesmoke;
+  background-color: antiquewhite;
+  overflow-y: hidden;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 0.9rem;
+}
+
+.redirect:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6e6e6e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.glass1 {
+  background: rgba(0, 0, 0, 0.596);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  color: rgb(238, 238, 238);
+}
+
+.profile_img {
+  -webkit-mask-image : url('./assets/blob.svg');
+  mask-image: url('./assets/blob.svg');
+  width: 100%;
+  height: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  
+}
+
+.profile_img img {
+  width: 100%;
+  height: 100%;
+  scale: 0.9;
+  object-fit: cover;
+}
