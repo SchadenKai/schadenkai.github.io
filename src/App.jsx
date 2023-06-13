@@ -1,21 +1,7 @@
 import "./App.css";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { useRef, useState, Suspense, useEffect } from "react";
-import {
-  CameraControls,
-  CubeCamera,
-  OrbitControls,
-  PerspectiveCamera,
-} from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import reactLogo from "./assets/react.svg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Euler } from "three";
-import Blob from "./assets/blob.svg";
-import { useNavigate } from "react-router-dom";
-import Navbar from "./components/layout/navbar";
-import ASScroll from "@ashthornton/asscroll";
 import LandingPage from "./components/pages/landingPage";
 import TechStack from "./components/pages/techStack";
 import ProjectsPage from "./components/pages/projectsPage";
