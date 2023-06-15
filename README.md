@@ -1,6 +1,7 @@
 ## Personal Portfolio website
 The personal portfolio website aims to showcase the achievements, projects, tech stacks and contact information of the owner. This has been made through the following technologies listed below. 
 Feel free the use the portfolio website to your own customization, just change the information in the `src/constants/index.js` folder. The javacript file contains that is to be reflected on the website.
+- p.s : the website is still under development and just offers a minimun viable product (MVP)
 
 ## Getting started
 1. Locate first the folder that you wanted to contain the repository in. Then perform cloning of repository. 
@@ -26,3 +27,8 @@ git clone https://github.com/SchadenKai/schadenkai.github.io.git
 - React Three / Fiber
 - React Three / Drei
 - EmailJS
+
+## Integrations
+- [ ] Responsiveness / Adaptive Design 
+- [ ] More interactivity on the 3d model
+- [x] Adaptable source code and folder structure
