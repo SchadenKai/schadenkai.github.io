@@ -17,7 +17,7 @@ export default function App() {
   useEffect(() => {}, []);
   return (
     <>
-      <wrapper className="d-flex flex-column justify-content-center align-items-center h-auto position-relative ">
+      <div className="d-flex flex-column justify-content-center align-items-center h-auto position-relative ">
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 vw-100">
           <Navbar />
           <div
@@ -47,7 +47,7 @@ export default function App() {
             position={[0, 0, 0]}
           />
         </div>
-      </wrapper>
+      </div>
     </>
   );
 }

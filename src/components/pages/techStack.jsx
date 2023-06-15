@@ -2,7 +2,7 @@ import { skills } from '../../constants/index'
 
 export default function TechStack() {
   return (
-    <page id="tech_stack" className="w-100 h-100 d-flex flex-column align-items-center justify-content-center mb-5">
+    <div id="tech_stack" className="w-100 h-100 d-flex flex-column align-items-center justify-content-center mb-5">
       <div className="w-50 h-75 p-4 glass1 d-flex flex-column justify-content-around">
         <h2>Tech stacks</h2>
         <div
@@ -38,6 +38,6 @@ export default function TechStack() {
           })}
         </div>
       </div>
-    </page>
+    </div>
   );
 }

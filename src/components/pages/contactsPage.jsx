@@ -24,7 +24,7 @@ export default function ContactsPage({ref}) {
         }
       );
   };
-
+  
   return (
     <div id="contact" className="d-flex flex-column justify-content-center align-items-center h-100 w-100">
       <div className="w-50 d-flex flex-column glass1">
