@@ -1,6 +1,11 @@
 ## Personal Portfolio website
 The personal portfolio website aims to showcase the achievements, projects, tech stacks and contact information of the owner. This has been made through the following technologies listed below. 
 Feel free the use the portfolio website to your own customization, just change the information in the `src/constants/index.js` folder. The javacript file contains that is to be reflected on the website.
+
+![Website preview](./docs/porfolio-preview.png)
+
+![Website preview 2](/docs/portfolio-preview-1.png)
+
 - p.s : the website is still under development and just offers a minimun viable product (MVP)
 
 ## Getting started
