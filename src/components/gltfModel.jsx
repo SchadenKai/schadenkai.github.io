@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { threeJSConfig } from "../constants";
 
 export default function GltfModel({
   modelPath,
@@ -9,7 +10,7 @@ export default function GltfModel({
 }) {
   const ref = useRef();
   const gltf = useLoader(GLTFLoader, modelPath);
-  useFrame((state, delta) => (ref.current.rotation.y += 0.0001));
+  useFrame((state, delta) => (ref.current.rotation.y += threeJSConfig.rotationSpeed));
   return (
     <>
       <primitive ref={ref} object={gltf.scene} position={position} scale={scale} />

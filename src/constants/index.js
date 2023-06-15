@@ -23,6 +23,17 @@ export const navLinks = [
     }
 ]
 
+export const blenderModel = {
+    modelPath : "./fantasy_island.glb",
+    type : "glb"
+}
+
+export const threeJSConfig = {
+  scale : "0.5",
+  modelPosition : [0,0,0],
+  rotationSpeed : 0.0001,
+}
+
 export const socialLinks = [
   {
     name: "Facebook",
