@@ -5,7 +5,7 @@
 body {
   color: whitesmoke;
   background-color: antiquewhite;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 img { 

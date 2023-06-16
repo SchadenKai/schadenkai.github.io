@@ -14,10 +14,32 @@ export const navLinks = [
         url : "#projects"
     },
     {
+      name : "Awards",
+      url : "#awards"
+    },
+    {
         name : "Contact",
         url : "#contact"
     }
 ]
+
+export const emailJSConfig = {
+  serviceID : "service_ghsnk3j",
+  templateID : "template_swzyujx",
+  publicKey : "-q-JVAPb0cDJbPnCO",
+  contactsPreviewText : "Get in touch if you want me to be in collaboration or in future projects. I am also currently open and finding an internship for summer."
+}
+
+export const blenderModel = {
+    modelPath : "./fantasy_island.glb",
+    type : "glb"
+}
+
+export const threeJSConfig = {
+  scale : "0.5",
+  modelPosition : [0,0,0],
+  rotationSpeed : 0.0001,
+}
 
 export const socialLinks = [
   {
@@ -130,6 +152,42 @@ export const skills = {
     },
   ],
 };
+
+export const awards = [
+  {
+    name : "iSITE x StackLeague Programming Competition Champion",
+    issuer : "StackLeague",
+    location : "Lyceum of the Philippines - Laguna",
+    description : "The competition focuses on problem solving in data structures and algorithms in which I competed with PHP as my programming language. The competition taught me a lot mostly throughout the training period wherein our college has supported on.",
+    date : "2023",
+    imageUrl : [
+      "./img/awards/stackleague-competition.jpg",
+      "./img/awards/stackleague-competition-2.jpg"
+    ]
+  },
+  {
+    name : "iSITE National Programming Competition Participant",
+    issuer : "iSITE",
+    location : "Virtual",
+    description : "The competition focuses on problem solving in data stuctures and algorithm in which I competed for the C++ category.",
+    date : "2023",
+    imageUrl : [
+      "./img/awards/isite-nationals.jpg",
+      "./img/awards/isite-nationals-1.jpg"
+    ]
+  },
+  {
+    name : "Hackada : Kadakareer x Help Bridge Business Challenge Hackathon - Fourth Place",
+    issuer : "Kadakarerr",
+    location : "Virtual",
+    description : "The hackathon revolves around offering a business solution for the target company, Help Bridge, on the its current situation. The hackathon enhanced my skills in UI/UX designing and prototyping which has been proposed and pitched by us.",
+    date : "2023",
+    imageUrl : [
+      "./img/awards/kadakareer.jpg",
+      "./img/awards/kadakareer-1.jpg"
+    ]
+  }
+]
 
 export const projects = [
   {

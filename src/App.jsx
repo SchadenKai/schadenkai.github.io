@@ -9,6 +9,8 @@ import ModelViewer from "./components/modelViewer";
 import ContactsPage from "./components/pages/contactsPage";
 import Footer from "./components/layout/footer";
 import Navbar from "./components/layout/navbar"
+import AwardsPage from "./components/pages/awardsPage";
+import { blenderModel, threeJSConfig } from "./constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +18,7 @@ export default function App() {
   useEffect(() => {}, []);
   return (
     <>
-      <wrapper className="d-flex flex-column justify-content-center align-items-center h-auto position-relative ">
+      <div className="d-flex flex-column justify-content-center align-items-center h-auto position-relative ">
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 vw-100">
           <Navbar />
           <div
@@ -27,6 +29,7 @@ export default function App() {
             <LandingPage />
             <TechStack />
             <ProjectsPage />
+            <AwardsPage />
             <ContactsPage />
             <Footer />
           </div>
@@ -40,12 +43,12 @@ export default function App() {
           className="w-100  d-flex justify-content-evenly align-items-center position-absolute top-0 start-0 bottom-0 end-0"
         >
           <ModelViewer
-            modelPath={"./fantasy_island.glb"}
-            scale="0.5"
-            position={[0, 0, 0]}
+            modelPath={blenderModel.modelPath}
+            scale={threeJSConfig.scale}
+            position={threeJSConfig.modelPosition}
           />
         </div>
-      </wrapper>
+      </div>
     </>
   );
 }

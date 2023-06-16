@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { emailJSConfig } from "../../constants";
 
 export default function ContactsPage({ref}) {
   const form = useRef();
@@ -9,10 +10,10 @@ export default function ContactsPage({ref}) {
 
     emailjs
       .sendForm(
-        "service_ghsnk3j",
-        "template_swzyujx",
+        emailJSConfig.serviceID,
+        emailJSConfig.templateID,
         form.current,
-        "-q-JVAPb0cDJbPnCO"
+        emailJSConfig.publicKey
       )
       .then(
         (result) => {
@@ -24,12 +25,12 @@ export default function ContactsPage({ref}) {
         }
       );
   };
-
+  
   return (
     <div id="contact" className="d-flex flex-column justify-content-center align-items-center h-100 w-100">
       <div className="w-50 d-flex flex-column glass1">
         <h1 className="text-warning mx-4 mt-4">Contact me</h1>
-        <p className="mx-4">Get in touch if you want me to be in collaboration or in future projects. I am also currently open and finding an internship for summer.</p>
+        <p className="mx-4">{emailJSConfig.contactsPreviewText}</p>
         <form
           style={{borderRadius : "30px"}}
           className="d-flex flex-column w-100 p-4 pt-0"
