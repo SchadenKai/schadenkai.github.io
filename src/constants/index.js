@@ -336,13 +336,7 @@ export const projects = [
     links : [
         {
             name : "Github",
-            url : "https://schadenkai.github.io/space-exploration/",
-            imageUrl : "./img/icons/web-icon.png",
-            sideNote : "Website"
-        },
-        {
-            name : "Github",
-            url : "https://github.com/SchadenKai/space-exploration",
+            url : "https://github.com/SchadenKai/PacmanCLI",
             imageUrl : "./img/socials_icon/github.svg",
             sideNote : "Github"
         }
