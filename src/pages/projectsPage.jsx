@@ -1,4 +1,4 @@
-import { projects } from "../../constants";
+import { projects } from "../data";
 
 export default function ProjectsPage() {
   return (

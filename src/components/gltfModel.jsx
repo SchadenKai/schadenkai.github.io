@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { threeJSConfig } from "../constants";
+import { threeJSConfig } from "../data";
 
 export default function GltfModel({
   modelPath,

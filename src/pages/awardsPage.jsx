@@ -1,4 +1,4 @@
-import { awards } from "../../constants";
+import { awards } from "../data";
 
 export default function AwardsPage() {
     return (

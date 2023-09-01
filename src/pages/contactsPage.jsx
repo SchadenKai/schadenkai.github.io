@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { emailJSConfig } from "../../constants";
+import { emailJSConfig } from "../data";
 
 export default function ContactsPage({ref}) {
   const form = useRef();

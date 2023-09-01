@@ -1,4 +1,4 @@
-import { skills } from '../../constants/index'
+import { skills } from '../data'
 
 export default function TechStack() {
   return (
