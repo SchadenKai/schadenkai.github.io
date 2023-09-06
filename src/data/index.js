@@ -182,7 +182,7 @@ export const awards = [
   },
   {
     name : "Hackada : Kadakareer x Help Bridge Business Challenge Hackathon - Fourth Place",
-    issuer : "Kadakarerr",
+    issuer : "Kadakareer",
     location : "Virtual",
     description : "The hackathon revolves around offering a business solution for the target company, Help Bridge, on the its current situation. The hackathon enhanced my skills in UI/UX designing and prototyping which has been proposed and pitched by us.",
     date : "2023",
@@ -193,7 +193,7 @@ export const awards = [
   },
   {
     name : "Hackada : Kadakareer x Home Credit Business Challenge Hackathon - Fourth Place",
-    issuer : "Kadakarerr",
+    issuer : "Kadakareer",
     location : "Virtual",
     description : "Creating a product positioning for Home Credit's new mobile application. This involved learning marketing strategies and solution, and creating a marketing plan.",
     date : "2023",
