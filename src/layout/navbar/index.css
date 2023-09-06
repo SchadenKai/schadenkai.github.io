@@ -1,0 +1,19 @@
+.navbar-link:hover {
+    background-color: rgb(80, 199, 41);
+    color: white;
+    transition: 0.1s;
+}
+.navbar-brand:hover {
+    color: rgb(80, 199, 41);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column !important;
+    } 
+    
+}

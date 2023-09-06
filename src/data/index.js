@@ -1,6 +1,6 @@
 export const about = {
     name: "Kairus Noah E. Tecson",
-    description : "I am a full-stack developer and currently a third year Computer Science student in Batangas State University 🏫.",
+    description : "A Full-stack developer and a 4th year Computer Science student in Batangas State University, Philippines 🏫.",
     imageUrl: "./img/profile_img.jpg",
 }
 
@@ -185,6 +185,28 @@ export const awards = [
     imageUrl : [
       "./img/awards/kadakareer.jpg",
       "./img/awards/kadakareer-1.jpg"
+    ]
+  },
+  {
+    name : "Hackada : Kadakareer x Home Credit Business Challenge Hackathon - Fourth Place",
+    issuer : "Kadakarerr",
+    location : "Virtual",
+    description : "Creating a product positioning for Home Credit's new mobile application. This involved learning marketing strategies and solution, and creating a marketing plan.",
+    date : "2023",
+    imageUrl : [
+      "./img/awards/homeCreditHackadaCertificate.png",
+      
+    ]
+  },
+  {
+    name : "International Symposium on Education and AI Convergence (ISEAC) Hackathon 2023 - Third Place",
+    issuer : "University of the Philippines Open University",
+    location : "UPOU- Los Banos, Laguna",
+    description : "The Hackathon revolves around creating a AI solution for an innovation on effective online proctoring system. This progressed my knowledge in Artificial Intelligence and Hackathons in general.",
+    date : "2023",
+    imageUrl : [
+      "./img/awards/ISEACHackathon1.jpg",
+      "./img/awards/ISEACHackathon2.jpg"
     ]
   }
 ]

@@ -8,7 +8,7 @@ export default function LandingPage() {
       <div style={{ maxWidth : "765px"}} className="glass1 w-50 h-auto"> 
           {/* text column */}
           <div className="8 py-4 px-5">
-            <h1 style={{ fontSize: "2.5rem" }}>{about.name}</h1>
+            <h1 className='py-2' style={{ fontSize: "2.5rem" }}>{about.name}</h1>
             <p>
               {about.description}
             </p>
@@ -18,7 +18,7 @@ export default function LandingPage() {
               <div className=" w-50 d-flex gap-1 justify-content-evenly">
                 {socialLinks.map(social => {
                   return (
-                    <a href={social.url} target="_blank">
+                    <a key={social.name} href={social.url} target="_blank">
                       <img
                         height="30px"
                         width="30px"
