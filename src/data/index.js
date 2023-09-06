@@ -4,6 +4,10 @@ export const about = {
     imageUrl: "./img/profile_img.jpg",
 }
 
+export const footer = {
+    description : "Still under construction  |   © 2023 Kairus Noah E. Tecson",
+}
+
 export const navLinks = [
     {
         name : "Tech Stack",
