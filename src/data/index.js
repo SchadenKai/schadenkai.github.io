@@ -192,7 +192,7 @@ export const awards = [
     ]
   },
   {
-    name : "Hackada : Kadakareer x Home Credit Business Challenge Hackathon - Fourth Place",
+    name : "Hackada : Kadakareer x Home Credit Business Challenge Hackathon Participant",
     issuer : "Kadakareer",
     location : "Virtual",
     description : "Creating a product positioning for Home Credit's new mobile application. This involved learning marketing strategies and solution, and creating a marketing plan.",
