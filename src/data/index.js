@@ -1,6 +1,6 @@
 export const about = {
     name: "Kairus Noah E. Tecson",
-    description : "A Full-stack developer and a 4th year Computer Science student in Batangas State University, Philippines 🏫.",
+    description : "A Full-stack developer and a 4th year Computer Science student in Batangas State University, Philippines 🏫. Aspiring to become a Software Engineer and an ML/AI Engineer. Currently interested in Data science and, AI and Machine learning.",
     imageUrl: "./img/profile_img.jpg",
 }
 
@@ -35,14 +35,29 @@ export const emailJSConfig = {
 }
 
 export const blenderModel = {
-    modelPath : "./fantasy_island.glb",
+    modelPath : "./magical_find.glb",
     type : "glb"
 }
 
 export const threeJSConfig = {
-  scale : "0.5",
+  scale : "8",
   modelPosition : [0,0,0],
-  rotationSpeed : 0.0001,
+  rotationSpeed : 0.0005,
+}
+
+export const modelViewerConfig = {
+  ambientLight : {
+    intensity : 1,
+    color : null
+  },
+  directionalLight : {
+    intensity : 1,
+    color : "white",
+    position : [5,0,5]
+  },
+  camera : {
+    position : [0,40,10]
+  }
 }
 
 export const socialLinks = [
@@ -182,7 +197,7 @@ export const awards = [
   },
   {
     name : "Hackada : Kadakareer x Help Bridge Business Challenge Hackathon - Fourth Place",
-    issuer : "Kadakareer",
+    issuer : "Kadakareer",  
     location : "Virtual",
     description : "The hackathon revolves around offering a business solution for the target company, Help Bridge, on the its current situation. The hackathon enhanced my skills in UI/UX designing and prototyping which has been proposed and pitched by us.",
     date : "2023",
