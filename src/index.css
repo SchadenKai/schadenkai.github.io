@@ -19,7 +19,6 @@ p {
 a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 0.9rem;
 }
 
 .redirect:hover {
@@ -53,6 +52,9 @@ a {
   backdrop-filter: blur(6.4px);
   -webkit-backdrop-filter: blur(6.4px);
   color: rgb(238, 238, 238);
+  max-width: 1500px;
+  width: auto;
+  margin: 0 auto;
 }
 
 
@@ -71,4 +73,15 @@ a {
   height: 100%;
   scale: 0.9;
   object-fit: cover;
+}
+
+#awards, #home, #contact, #skills, #projects {
+  scroll-snap-align: start;
+}
+
+main {
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
 }

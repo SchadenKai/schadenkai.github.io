@@ -1,19 +1,17 @@
-.navbar-link:hover {
-    background-color: rgb(80, 199, 41);
-    color: white;
-    transition: 0.1s;
-}
-.navbar-brand:hover {
-    color: rgb(80, 199, 41);
+.navbar {
+  background: rgba(66, 66, 66, 0.596);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  color: rgb(238, 238, 238);
 }
 
-@media screen and (max-width: 768px) {
-    .navbar-nav {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        flex-direction: column !important;
-    } 
-    
+.navbar a {
+  border-radius: 4px;
+  padding : 2px 4px;
+  color: white !important;
+}
+.navbar a:hover {
+  color: rgb(80, 199, 41) !important;
+  transition: 0.1s;
 }

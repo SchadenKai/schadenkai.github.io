@@ -1,6 +1,6 @@
 export const about = {
     name: "Kairus Noah E. Tecson",
-    description : "A Full-stack developer and a 4th year Computer Science student in Batangas State University, Philippines 🏫. Aspiring to become a Software Engineer and an ML/AI Engineer. Currently interested in Data science and, AI and Machine learning.",
+    description : "A Full-stack developer and a 4th year Computer Science student in Batangas State University, Philippines 🏫. Aspiring to become a Software Engineer and a ML/AI Engineer. Currently interested in Data science and, AI and Machine learning.",
     imageUrl: "./img/profile_img.jpg",
 }
 
@@ -10,8 +10,8 @@ export const footer = {
 
 export const navLinks = [
     {
-        name : "Tech Stack",
-        url : "#tech_stack"
+        name : "Skills",
+        url : "#skills",
     }, 
     {
         name : "Projects",
@@ -86,14 +86,6 @@ export const socialLinks = [
 export const skills = {
   tech_stack: [
     {
-      name: "HTML",
-      imageUrl: "./img/icons/html.svg",
-    },
-    {
-      name: "CSS",
-      imageUrl: "./img/icons/css.svg",
-    },
-    {
       name: "ReactJS",
       imageUrl: "./img/icons/react.svg",
     },
@@ -113,11 +105,35 @@ export const skills = {
       name: "Bootstrap",
       imageUrl: "./img/icons/bootstrap.svg",
     },
+    {
+      name: "TailwindCSS",
+      imageUrl: "./img/icons/tailwindcss.svg"
+    },
+    {
+      name: "FastAPI",
+      imageUrl: "./img/icons/fastapi.svg"
+    }
   ],
   languages: [
     {
+      name: "HTML",
+      imageUrl: "./img/icons/html.svg",
+    },
+    {
+      name: "CSS",
+      imageUrl: "./img/icons/css.svg",
+    },
+    {
       name: "Javascript",
       imageUrl: "./img/icons/javascript.svg",
+    },
+    {
+      name: "Typescript",
+      imageUrl: "./img/icons/typescript.svg",
+    },
+    {
+      name: "Sass",
+      imageUrl: "./img/icons/sass.svg",
     },
     {
       name: "Python",
@@ -135,10 +151,6 @@ export const skills = {
       name: "PHP",
       imageUrl: "./img/icons/php.svg",
     },
-    {
-      name: "Typescript",
-      imageUrl: "./img/icons/typescript.svg",
-    },
   ],
   tools: [
     {
@@ -148,14 +160,6 @@ export const skills = {
     {
       name: "Jquery",
       imageUrl: "./img/icons/jquery.svg",
-    },
-    {
-      name: "Sass",
-      imageUrl: "./img/icons/sass.svg",
-    },
-    {
-      name: "Figma",
-      imageUrl: "./img/icons/figma.svg",
     },
     {
       name: "ChartJS",
@@ -169,6 +173,18 @@ export const skills = {
       name: "HandlebarJS",
       imageUrl: "./img/icons/handlebarjs.png",
     },
+    {
+      name: "Figma",
+      imageUrl: "./img/icons/figma.svg",
+    },
+    {
+      name: "Firebase",
+      imageUrl: "./img/icons/firebase.svg",
+    },
+    {
+      name: "Google Cloud",
+      imageUrl: "./img/icons/google-cloud.svg",
+    }
   ],
 };
 
