@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import { skills } from '../data'
+import { skills } from './data'
 
 export default function Skills() {
   return (
     <div id="skills" className="w-100 h-100 d-flex flex-column align-items-center justify-content-center mb-5">
-      <div className="p-4 glass1 d-flex flex-column justify-content-around">
+      <div className="p-4 glass1 d-flex flex-column">
         <h2>Tech stacks</h2>
         {/* TODO : create responsive number of images showns in a single row */}
         <div

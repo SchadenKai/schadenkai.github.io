@@ -75,9 +75,16 @@ a {
   object-fit: cover;
 }
 
-#awards, #home, #contact, #skills, #projects {
+#awards, #home, #skills, #projects {
   scroll-snap-align: start;
+  .glass1 {
+    margin : 0 8px;
+  }
 }
+#contact .glass1 {
+  margin : 0 8px;
+}
+
 
 main {
   overflow-y: scroll;
