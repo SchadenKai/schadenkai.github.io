@@ -5,7 +5,7 @@ export default function LandingPage() {
     // section wrapper
     <section id="home" className="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
       {/* card wrapper */}
-      <div style={{ maxWidth : "765px"}} className="glass1 h-auto"> 
+      <div className="glass1 h-auto"> 
           {/* text column */}
           <div className="8 py-4 px-5">
             <h1 className='py-2' style={{ fontSize: "2.5rem" }}>{about.name}</h1>

@@ -2,8 +2,8 @@ import { projects } from "../data";
 
 export default function ProjectsPage() {
   return (
-    <div id="projects" className="w-100 d-flex flex-column align-items-center justify-content-center ">
-      <div className="w-50 h-75 p-4 glass1 d-flex flex-column mb-5">
+    <section id="projects" className="w-100 d-flex flex-column align-items-center justify-content-center ">
+      <div className="p-4 glass1 d-flex flex-column mb-5">
         <h2 className="mb-4 text-warning">Projects</h2>
         {projects.map((project) => {
           return (
@@ -57,6 +57,6 @@ export default function ProjectsPage() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

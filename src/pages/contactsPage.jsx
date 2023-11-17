@@ -28,7 +28,7 @@ export default function ContactsPage({ref}) {
   
   return (
     <div id="contact" className="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-      <div className="w-50 d-flex flex-column glass1">
+      <div className="d-flex flex-column glass1">
         <h1 className="text-warning mx-4 mt-4">Contact me</h1>
         <p className="mx-4">{emailJSConfig.contactsPreviewText}</p>
         <form
