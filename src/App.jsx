@@ -4,12 +4,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LandingPage from "./pages/landingPage";
 import Skills from "./pages/skills";
 import ProjectsPage from "./pages/projectsPage";
-import ModelViewer from "./components/modelViewer";
 import ContactsPage from "./pages/contactsPage";
 import Footer from "./layout/footer";
 import AwardsPage from "./pages/awardsPage";
-import { blenderModel, threeJSConfig } from "./data";
 import NavbarLayout from "./layout/navbar/navbar";
+import ThreeJSBackdrop from "./layout/threeJSBackdrop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,8 +19,9 @@ export default function App() {
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 vw-100">
           <NavbarLayout />
           <main
-            // TODO : Change 
+            // TODO : Change
             className="w-100 h-100"
+            z
           >
             <LandingPage />
             <Skills />
@@ -31,20 +31,7 @@ export default function App() {
             <Footer />
           </main>
         </div>
-
-        <div
-          style={{
-            height: "100vh",
-            zIndex: "-10",
-          }}
-          className="w-100  d-flex justify-content-evenly align-items-center position-absolute top-0 start-0 bottom-0 end-0"
-        >
-          <ModelViewer
-            modelPath={blenderModel.modelPath}
-            scale={threeJSConfig.scale}
-            position={threeJSConfig.modelPosition}
-          />
-        </div>
+        <ThreeJSBackdrop />
       </div>
     </>
   );
