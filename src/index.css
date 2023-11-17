@@ -85,3 +85,7 @@ main {
   scroll-snap-align: start;
   scroll-behavior: smooth;
 }
+
+.skills img {
+  max-width: 10px !important;
+}

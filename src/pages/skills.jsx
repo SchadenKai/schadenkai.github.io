@@ -4,7 +4,7 @@ import { skills } from '../data'
 export default function Skills() {
   return (
     <div id="skills" className="w-100 h-100 d-flex flex-column align-items-center justify-content-center mb-5">
-      <div className="w-50 h-75 p-4 glass1 d-flex flex-column justify-content-around">
+      <div className="p-4 glass1 d-flex flex-column justify-content-around">
         <h2>Tech stacks</h2>
         {/* TODO : create responsive number of images showns in a single row */}
         <div
@@ -13,7 +13,7 @@ export default function Skills() {
         >
           {skills.tech_stack.map(skills => {
             return (
-              <img height="100%" src={skills.imageUrl} alt={skills.name} title={skills.name} />
+              <img height="100%" key={skills.name} src={skills.imageUrl} alt={skills.name} title={skills.name} />
             )
           })}
         </div>
@@ -24,7 +24,7 @@ export default function Skills() {
         >
           {skills.languages.map(skills => {
             return (
-              <img height="100%" src={skills.imageUrl} alt={skills.name} />
+              <img height="100%" key={skills.name} src={skills.imageUrl} alt={skills.name} title={skills.name}/>
             )
           })}
         </div>
@@ -35,7 +35,7 @@ export default function Skills() {
         >
           {skills.tools.map(skills => {
             return (
-              <img height="100%" src={skills.imageUrl} alt={skills.name} />
+              <img height="100%" key={skills.name} src={skills.imageUrl} alt={skills.name} title={skills.name}/>
             )
           })}
         </div>
