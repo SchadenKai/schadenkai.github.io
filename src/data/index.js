@@ -383,6 +383,43 @@ export const projects = [
     ]
   },
   {
+    name: "ThreeJS Portfolio Website",
+    description:
+      "Personal Portfolio website using react. It showcase the use of ThreeJS to be able to display 3D background image and its behavior. The project uses React-three-fiber library, which integrates Three JS in ReactJS easily.",
+    imageUrl: [
+      "./img/projects/portfolio-threejs.gif",
+      "./img/projects/portfolio-threejs-1.png"
+    ],
+    links : [
+        {
+            name : "Website",
+            url : "https://schadenkai.github.io/",
+            imageUrl : "./img/icons/web-icon.png",
+            sideNote : "Website"
+        },
+        {
+            name : "Github",
+            url : "https://github.com/SchadenKai/schadenkai.github.io",
+            imageUrl : "./img/socials_icon/github.svg",
+            sideNote : "Github"
+        }
+    ],
+    tech_stack : [
+        {
+            name : "ReactJS",
+            imageUrl : "./img/icons/react.svg"
+        },
+        {
+            name : "Bootstrap",
+            imageUrl : "./img/icons/bootstrap.svg"
+        },
+        {
+            name : "ThreeJS",
+            imageUrl : "./img/icons/threejs.png"
+        }
+    ]
+  },
+  {
     name: "Space Exploration Website",
     description:
       "Simple HTML, CSS, and Javascript website that showcases different planets in our solar system. The website is developed for a coding bootcamp as a side project.",
