@@ -20,7 +20,6 @@ export default function ProjectsPage() {
                 {project.imageUrl.map((image) => {
                   return (
                     <img
-                      key={project.name}
                       className="mb-3"
                       style={{ width: "100%", objectFit: "contain"}}
                       src={image}
@@ -55,8 +54,8 @@ export default function ProjectsPage() {
                 </div>
                 <p className="mt-3 text-warning">Tech Stack used: </p>
                 <div
-                  className="w-100 d-flex justify-content-start gap-4"
-                  style={{ height: "30px" }}
+                  className="w-100 d-flex justify-content-start gap-3"
+                  style={{ height: "30px"}}
                 >
                   {project.tech_stack.map((tech) => {
                     return (
