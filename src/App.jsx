@@ -2,7 +2,7 @@ import { useRef, useState, Suspense, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LandingPage from "./pages/landingPage";
-import Skills from "./skills";
+import Skills from "./pages/skills";
 import ProjectsPage from "./pages/projectsPage";
 import ContactsPage from "./pages/contactsPage";
 import Footer from "./layout/footer";
@@ -22,7 +22,7 @@ export default function App() {
             className="vw-100 h-100"
           >
             <LandingPage />
-            {/* <Skills /> */}
+            <Skills />
             <ProjectsPage />
             <AwardsPage />
             <ContactsPage />

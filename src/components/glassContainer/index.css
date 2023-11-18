@@ -1,0 +1,12 @@
+.glass1 {
+    background: rgba(0, 0, 0, 0.596);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    color: rgb(238, 238, 238);
+    max-width: 765px;
+    width: auto;
+    margin: 0 auto;
+    padding: 4px 8px;
+  }

@@ -84,7 +84,15 @@ export const socialLinks = [
 ];
 
 export const skills = {
-  tech_stack: [
+  frontend_web : [
+    {
+      name: "HTML",
+      imageUrl: "./img/icons/html.svg",
+    },
+    {
+      name: "CSS",
+      imageUrl: "./img/icons/css.svg",
+    },
     {
       name: "ReactJS",
       imageUrl: "./img/icons/react.svg",
@@ -92,14 +100,6 @@ export const skills = {
     {
       name: "ThreeJS",
       imageUrl: "./img/icons/threejs.png",
-    },
-    {
-      name: "ExpressJS",
-      imageUrl: "./img/icons/express.png",
-    },
-    {
-      name: "NodeJS",
-      imageUrl: "./img/icons/node_js.svg",
     },
     {
       name: "Bootstrap",
@@ -110,19 +110,68 @@ export const skills = {
       imageUrl: "./img/icons/tailwindcss.svg"
     },
     {
+      name: "Sass",
+      imageUrl: "./img/icons/sass.svg",
+    },
+    {
+      name: "HandlebarJS",
+      imageUrl: "./img/icons/handlebarjs.png",
+    },
+    {
+      name: "ChartJS",
+      imageUrl: "./img/icons/chartjs.png",
+    },
+    {
+      name: "Jquery",
+      imageUrl: "./img/icons/jquery.svg",
+    },
+  ],
+  backend : [
+    {
+      name: "ExpressJS",
+      imageUrl: "./img/icons/express.png",
+    },
+    {
+      name: "NodeJS",
+      imageUrl: "./img/icons/node_js.svg",
+    },
+    
+    {
       name: "FastAPI",
       imageUrl: "./img/icons/fastapi.svg"
     }
   ],
+  database: [
+    {
+      name: "Firebase Firestore",
+      imageUrl: "./img/icons/firestore.svg"
+    },
+    {
+      name: "MySQL",
+      imageUrl: "./img/icons/mysql.svg"
+    },
+    {
+      name: "PostgreSQL",
+      imageUrl: "./img/icons/postgres.svg"
+    }
+  ],
+  mobile: [
+    {
+      name: "Ionic (React)",
+      imageUrl: "./img/icons/ionic.svg"
+    }
+  ],
+  dev_ops: [
+    {
+      name: "Git",
+      imageUrl: "./img/icons/git.svg",
+    },
+    {
+      name: "Github Actions",
+      imageUrl: "./img/icons/github_actions.png"
+    }
+  ],
   languages: [
-    {
-      name: "HTML",
-      imageUrl: "./img/icons/html.svg",
-    },
-    {
-      name: "CSS",
-      imageUrl: "./img/icons/css.svg",
-    },
     {
       name: "Javascript",
       imageUrl: "./img/icons/javascript.svg",
@@ -130,10 +179,6 @@ export const skills = {
     {
       name: "Typescript",
       imageUrl: "./img/icons/typescript.svg",
-    },
-    {
-      name: "Sass",
-      imageUrl: "./img/icons/sass.svg",
     },
     {
       name: "Python",
@@ -152,31 +197,7 @@ export const skills = {
       imageUrl: "./img/icons/php.svg",
     },
   ],
-  tools: [
-    {
-      name: "Git",
-      imageUrl: "./img/icons/git.svg",
-    },
-    {
-      name: "Jquery",
-      imageUrl: "./img/icons/jquery.svg",
-    },
-    {
-      name: "ChartJS",
-      imageUrl: "./img/icons/chartjs.png",
-    },
-    {
-      name: "EJS",
-      imageUrl: "./img/icons/ejs.png",
-    },
-    {
-      name: "HandlebarJS",
-      imageUrl: "./img/icons/handlebarjs.png",
-    },
-    {
-      name: "Figma",
-      imageUrl: "./img/icons/figma.svg",
-    },
+  cloud : [
     {
       name: "Firebase",
       imageUrl: "./img/icons/firebase.svg",
@@ -185,6 +206,16 @@ export const skills = {
       name: "Google Cloud",
       imageUrl: "./img/icons/google-cloud.svg",
     }
+  ],
+  tools: [
+    {
+      name: "EJS",
+      imageUrl: "./img/icons/ejs.png",
+    },
+    {
+      name: "Figma",
+      imageUrl: "./img/icons/figma.svg",
+    },
   ],
 };
 
