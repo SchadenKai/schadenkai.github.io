@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       className="w-100 d-flex flex-column align-items-center mb-5"
     >
       <div className="w-100 p-4 glass1 mb-5">
-        <h2 className="mb-4 text-warning">Projects</h2>
+        <h2 className="mb-4 text-warning">Software Projects</h2>
         {projects.map((project) => {
           return (
             <div

@@ -118,6 +118,10 @@ export const skills = {
       imageUrl: "./img/icons/handlebarjs.png",
     },
     {
+      name: "EJS",
+      imageUrl: "./img/icons/ejs.png",
+    },
+    {
       name: "ChartJS",
       imageUrl: "./img/icons/chartjs.png",
     },
@@ -209,12 +213,16 @@ export const skills = {
   ],
   tools: [
     {
-      name: "EJS",
-      imageUrl: "./img/icons/ejs.png",
-    },
-    {
       name: "Figma",
       imageUrl: "./img/icons/figma.svg",
+    },
+    {
+      name: "Blender",
+      imageUrl: "./img/icons/blender.svg",
+    },
+    {
+      name: "Power BI",
+      imageUrl: "./img/icons/power-bi.svg",
     },
   ],
 };
