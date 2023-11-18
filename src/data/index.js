@@ -375,6 +375,10 @@ export const projects = [
         {
             name : "Typescript",
             imageUrl : "./img/icons/javascript.svg"
+        },
+        {
+            name : "Ionic",
+            imageUrl : "./img/icons/ionic.svg"
         }
     ]
   },

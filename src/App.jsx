@@ -3,10 +3,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LandingPage from "./pages/landingPage";
 import Skills from "./pages/skills";
-import ProjectsPage from "./pages/projectsPage";
+import ProjectsPage from "./pages/projects";
 import ContactsPage from "./pages/contactsPage";
 import Footer from "./layout/footer";
-import AwardsPage from "./pages/awardsPage";
+import AwardsPage from "./pages/awards";
 import NavbarLayout from "./layout/navbar";
 import ThreeJSBackdrop from "./layout/threeJSBackdrop";
 

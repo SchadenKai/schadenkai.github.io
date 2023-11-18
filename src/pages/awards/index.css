@@ -1,0 +1,9 @@
+#awards div div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+@media only screen and (max-width: 480px){
+    #awards div div{
+        grid-template-columns: 1fr;
+    }
+}

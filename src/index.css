@@ -65,12 +65,7 @@ a {
 
 #awards, #home, #skills, #projects {
   scroll-snap-align: start;
-  .glass1 {
-    margin : 0 8px;
-  }
-}
-#contact .glass1 {
-  margin : 0 8px;
+  
 }
 
 

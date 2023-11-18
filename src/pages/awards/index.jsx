@@ -1,4 +1,5 @@
-import { awards } from "../data";
+import { awards } from "../../data";
+import './index.css'
 
 export default function AwardsPage() {
     return (
@@ -8,14 +9,14 @@ export default function AwardsPage() {
                 {
                     awards.map(award => {
                         return(
-                            <div className="row w-100 mb-4">
-                                <div className="col-7">
+                            <div key={award.name} className="w-100 mb-4">
+                                <div className="d-flex flex-column">
                                     <h3>{award.name + " " + award.date}</h3>
                                     <h5>{"🏢 " + award.issuer}</h5>
                                     <h6>{"📍 " + award.location}</h6>
                                     <p>{award.description}</p>
                                 </div>
-                                <div className="col">
+                                <div className="d-flex flex-column">
                                     {award.imageUrl.map(url => {
                                         return(
                                             <img width='100%' src={url} alt={award.name}/>
