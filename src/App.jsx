@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function App() {
   return (
     <>
-      <div style={{height: "100dvh"}} className="d-flex flex-column justify-content-center align-items-center position-relative w-100">
+      <div className="d-flex flex-column justify-content-center align-items-center position-relative w-100 small-mobile">
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 vw-100">
           <NavbarLayout />
           <main
