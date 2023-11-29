@@ -139,11 +139,18 @@ export const skills = {
       name: "NodeJS",
       imageUrl: "./img/icons/node_js.svg",
     },
-    
     {
       name: "FastAPI",
       imageUrl: "./img/icons/fastapi.svg"
-    }
+    },
+    {
+      name: "JSON Web Tokens",
+      imageUrl: "./img/icons/json-web-token.svg"
+    },
+    {
+      name: "Firebase Authentication",
+      imageUrl: "./img/icons/firebase-auth.png"
+    },
   ],
   database: [
     {
@@ -169,6 +176,10 @@ export const skills = {
     {
       name: "Git",
       imageUrl: "./img/icons/git.svg",
+    },
+    {
+      name : "Github",
+      imageUrl: "./img/icons/github.svg"
     },
     {
       name: "Github Actions",
