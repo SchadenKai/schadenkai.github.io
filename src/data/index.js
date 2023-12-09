@@ -31,7 +31,7 @@ export const emailJSConfig = {
   serviceID : "service_ghsnk3j",
   templateID : "template_swzyujx",
   publicKey : "-q-JVAPb0cDJbPnCO",
-  contactsPreviewText : "Get in touch if you want me to be in collaboration or in future projects. I am also currently open and finding an internship for summer."
+  contactsPreviewText : "Currently open for work, commissions, internships, and other experiences."
 }
 
 export const blenderModel = {
