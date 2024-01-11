@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { projects } from "../../data";
 import "./index.css";
 
 export default function ProjectsPage() {
+  const [shownProjects, setShownProjects] = useState(1);
   return (
     <section
       id="projects"
@@ -9,7 +11,7 @@ export default function ProjectsPage() {
     >
       <div className="w-100 p-4 glass1 mb-5">
         <h2 className="mb-4 text-warning">Software Projects</h2>
-        {projects.map((project) => {
+        {projects.slice(0, shownProjects).map((project) => {
           return (
             <div
               key={project.name}
@@ -21,7 +23,7 @@ export default function ProjectsPage() {
                   return (
                     <img
                       className="mb-3"
-                      style={{ width: "100%", objectFit: "contain"}}
+                      style={{ width: "100%", objectFit: "contain" }}
                       src={image}
                       alt={"Image of" + project.name}
                     />
@@ -36,6 +38,7 @@ export default function ProjectsPage() {
                   {project.links.map((link) => {
                     return (
                       <a
+                        key={link.name}
                         className=" me-3"
                         href={link.url}
                         target="_blank"
@@ -55,11 +58,17 @@ export default function ProjectsPage() {
                 <p className="mt-3 text-warning">Tech Stack used: </p>
                 <div
                   className="w-100 d-flex justify-content-start gap-3"
-                  style={{ height: "30px"}}
+                  style={{ height: "30px" }}
                 >
                   {project.tech_stack.map((tech) => {
                     return (
-                      <img height="100%" src={tech.imageUrl} alt={"Icon of" + tech.name} title={tech.name}/>
+                      <img
+                        key={tech.name}
+                        height="100%"
+                        src={tech.imageUrl}
+                        alt={"Icon of" + tech.name}
+                        title={tech.name}
+                      />
                     );
                   })}
                 </div>
@@ -67,6 +76,21 @@ export default function ProjectsPage() {
             </div>
           );
         })}
+        {shownProjects == projects.length ? (
+          <button
+            className="btn w-100 btn-danger"
+            onClick={() => setShownProjects(1)}
+          >
+            + Less
+          </button>
+        ) : (
+          <button
+            className="btn w-100 btn-success"
+            onClick={() => setShownProjects(projects.length)}
+          >
+            + More
+          </button>
+        )}
       </div>
     </section>
   );

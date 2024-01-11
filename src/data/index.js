@@ -88,152 +88,195 @@ export const skills = {
     {
       name: "HTML",
       imageUrl: "./img/icons/html.svg",
+      status: "learned"
     },
     {
       name: "CSS",
       imageUrl: "./img/icons/css.svg",
+      status: "learned"
     },
     {
       name: "ReactJS",
       imageUrl: "./img/icons/react.svg",
+      status: "learned"
     },
     {
       name: "ThreeJS",
       imageUrl: "./img/icons/threejs.png",
+      status: "learned"
     },
     {
       name: "Bootstrap",
       imageUrl: "./img/icons/bootstrap.svg",
+      status: "learned"
     },
     {
       name: "TailwindCSS",
-      imageUrl: "./img/icons/tailwindcss.svg"
+      imageUrl: "./img/icons/tailwindcss.svg",
+      status: "learned"
     },
     {
       name: "Sass",
       imageUrl: "./img/icons/sass.svg",
-    },
-    {
-      name: "HandlebarJS",
-      imageUrl: "./img/icons/handlebarjs.png",
-    },
-    {
-      name: "EJS",
-      imageUrl: "./img/icons/ejs.png",
-    },
-    {
-      name: "ChartJS",
-      imageUrl: "./img/icons/chartjs.png",
+      status: "learned"
     },
     {
       name: "Jquery",
       imageUrl: "./img/icons/jquery.svg",
+      status: "learned"
+    },
+    {
+      name: "NextJS",
+      imageUrl: "https://img.icons8.com/fluency/48/nextjs.png",
+      status: "learning"
     },
   ],
   backend : [
     {
       name: "ExpressJS",
       imageUrl: "./img/icons/express.png",
+      status: "learned"
     },
     {
       name: "NodeJS",
       imageUrl: "./img/icons/node_js.svg",
+      status: "learned"
     },
     {
       name: "FastAPI",
-      imageUrl: "./img/icons/fastapi.svg"
+      imageUrl: "./img/icons/fastapi.svg",
+      status: "learned"
     },
     {
       name: "JSON Web Tokens",
-      imageUrl: "./img/icons/json-web-token.svg"
+      imageUrl: "./img/icons/json-web-token.svg",
+      status: "learned"
     },
     {
-      name: "Firebase Authentication",
-      imageUrl: "./img/icons/firebase-auth.png"
+      name: "Deno",
+      imageUrl: "./img/icons/deno.svg",
+      status: "learning"
     },
   ],
   database: [
     {
       name: "Firebase Firestore",
-      imageUrl: "./img/icons/firestore.svg"
+      imageUrl: "./img/icons/firestore.svg",
+      status: "learned"
     },
     {
       name: "MySQL",
-      imageUrl: "./img/icons/mysql.svg"
+      imageUrl: "./img/icons/mysql.svg",
+      status: "learned"
     },
     {
       name: "PostgreSQL",
-      imageUrl: "./img/icons/postgres.svg"
+      imageUrl: "./img/icons/postgres.svg",
+      status: "learned"
+    },
+    {
+      name: "Supabase",
+      imageUrl: "./img/icons/supabase.svg",
+      status: "learning"
     }
   ],
   mobile: [
     {
       name: "Ionic (React)",
-      imageUrl: "./img/icons/ionic.svg"
+      imageUrl: "./img/icons/ionic.svg",
+      status: "learned"
+    },
+    {
+      name: "Flutter",
+      imageUrl: "https://img.icons8.com/color/48/flutter.png",
+      status: "learning"
     }
   ],
   dev_ops: [
     {
       name: "Git",
       imageUrl: "./img/icons/git.svg",
+      status: "learned"
     },
     {
       name : "Github",
-      imageUrl: "./img/icons/github.svg"
+      imageUrl: "./img/icons/github.svg",
+      status: "learned"
     },
     {
       name: "Github Actions",
       imageUrl: "./img/icons/github_actions.png"
+    },
+    {
+      name: "Docker",
+      imageUrl: "./img/icons/docker.svg",
+      status: "learning"
+    },
+    {
+      name: "Linux",
+      imageUrl: "https://img.icons8.com/color/48/linux--v1.png",
+      status: "learned"
     }
   ],
   languages: [
     {
       name: "Javascript",
       imageUrl: "./img/icons/javascript.svg",
+      status: "learned"
     },
     {
       name: "Typescript",
       imageUrl: "./img/icons/typescript.svg",
+      status: "learned"
     },
     {
       name: "Python",
       imageUrl: "./img/icons/python.svg",
+      status: "learned"
     },
     {
       name: "C++",
       imageUrl: "./img/icons/c++.svg",
+      status: "learned"
     },
     {
       name: "Kotlin",
       imageUrl: "./img/icons/kotlin.svg",
+      status: "learned"
     },
     {
       name: "PHP",
       imageUrl: "./img/icons/php.svg",
+      status: "learned"
     },
   ],
   cloud : [
     {
       name: "Firebase",
       imageUrl: "./img/icons/firebase.svg",
+      status: "learned"
     },
     {
       name: "Google Cloud",
       imageUrl: "./img/icons/google-cloud.svg",
+      status: "learned"
     }
   ],
   tools: [
     {
       name: "Figma",
       imageUrl: "./img/icons/figma.svg",
+      status: "learned"
     },
     {
       name: "Blender",
       imageUrl: "./img/icons/blender.svg",
+      status: "learned"
     },
     {
       name: "Power BI",
       imageUrl: "./img/icons/power-bi.svg",
+      status: "learned"
     },
   ],
 };

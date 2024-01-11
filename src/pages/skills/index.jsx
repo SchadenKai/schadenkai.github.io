@@ -11,8 +11,19 @@ export default function Skills() {
           <p>Frontend (Web)</p>
           <div>
             {skills.frontend_web.map((data) => (
-              <div className="d-flex w-100 w-100 justify-content-start gap-4 mb-1">
-                <img key={data.name} src={data.imageUrl} alt={"Icon of" + data.name} title={data.name}/>
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
                 <p className="m-0 fs-6" key={data.name}>
                   {data.name}
                 </p>
@@ -24,8 +35,19 @@ export default function Skills() {
           <p>Backend</p>
           <div>
             {skills.backend.map((data) => (
-              <div className="d-flex w-100 w-100 justify-content-start gap-4 mb-1">
-                <img key={data.name} src={data.imageUrl} alt={"Icon of" + data.name} title={data.name}/>
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
                 <p className="m-0 fs-6" key={data.name}>
                   {data.name}
                 </p>
@@ -37,8 +59,19 @@ export default function Skills() {
           <p>Database</p>
           <div>
             {skills.database.map((data) => (
-              <div className="d-flex w-100 w-100 justify-content-start gap-4 mb-1">
-                <img key={data.name} src={data.imageUrl} alt={"Icon of" + data.name} title={data.name}/>
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
                 <p className="m-0 fs-6" key={data.name}>
                   {data.name}
                 </p>
@@ -50,8 +83,19 @@ export default function Skills() {
           <p>DevOps</p>
           <div>
             {skills.dev_ops.map((data) => (
-              <div className="d-flex w-100 w-100 justify-content-start gap-4 mb-1">
-                <img key={data.name} src={data.imageUrl} alt={"Icon of" + data.name} title={data.name}/>
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
                 <p className="m-0 fs-6" key={data.name}>
                   {data.name}
                 </p>
@@ -63,8 +107,19 @@ export default function Skills() {
           <p>Cloud</p>
           <div>
             {skills.cloud.map((data) => (
-              <div className="d-flex w-100 w-100 justify-content-start gap-4 mb-1">
-                <img key={data.name} src={data.imageUrl} alt={"Icon of" + data.name} title={data.name}/>
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
                 <p className="m-0 fs-6" key={data.name}>
                   {data.name}
                 </p>
@@ -76,8 +131,19 @@ export default function Skills() {
           <p>Mobile</p>
           <div>
             {skills.mobile.map((data) => (
-              <div className="d-flex w-100 w-100 justify-content-start gap-4 mb-1">
-                <img key={data.name} src={data.imageUrl} alt={"Icon of" + data.name} title={data.name}/>
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
                 <p className="m-0 fs-6" key={data.name}>
                   {data.name}
                 </p>
@@ -89,8 +155,19 @@ export default function Skills() {
           <p>Tools</p>
           <div>
             {skills.tools.map((data) => (
-              <div className="d-flex w-100 w-100 justify-content-start gap-4 mb-1">
-                <img key={data.name} src={data.imageUrl} alt={"Icon of" + data.name} title={data.name}/>
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
                 <p className="m-0 fs-6" key={data.name}>
                   {data.name}
                 </p>
@@ -102,8 +179,19 @@ export default function Skills() {
           <p>Languages</p>
           <div>
             {skills.languages.map((data) => (
-              <div className="d-flex w-100 w-100 justify-content-start gap-4 mb-1">
-                <img key={data.name} src={data.imageUrl} alt={"Icon of" + data.name} title={data.name}/>
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
                 <p className="m-0 fs-6" key={data.name}>
                   {data.name}
                 </p>
