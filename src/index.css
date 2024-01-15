@@ -58,7 +58,7 @@ a {
 
 
 #awards, #home, #skills, #projects {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 
