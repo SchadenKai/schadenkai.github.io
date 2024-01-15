@@ -14,6 +14,7 @@ import { ToastContainer } from "react-toastify";
 import "./data/meta";
 import { page_metadata } from "./data/meta";
 import 'react-toastify/dist/ReactToastify.css';
+import BlogPage from "./pages/blogs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,12 +32,13 @@ export default function App() {
       <div className="d-flex flex-column justify-content-center align-items-center position-relative w-100 small-mobile">
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 vw-100">
           <NavbarLayout />
-          <main className="vw-100 h-100">
+          <main className="vw-100 h-auto">
             <ToastContainer/>
             <LandingPage />
             <Skills />
             <ProjectsPage />
             <AwardsPage />
+            <BlogPage />
             <ContactsPage />
             <Footer />
           </main>

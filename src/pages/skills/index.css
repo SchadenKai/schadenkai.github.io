@@ -1,6 +1,6 @@
 #skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 8px;
   max-width: 1200px;
   .skills_container {
@@ -16,6 +16,11 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   #skills {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  #skills {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

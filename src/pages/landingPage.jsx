@@ -7,7 +7,7 @@ export default function LandingPage() {
       {/* card wrapper */}
       <div className="glass1 h-auto"> 
           {/* text column */}
-          <div className="8 py-4 px-5">
+          <div className="py-4 px-5">
             <h1 className='py-2' style={{ fontSize: "2.5rem" }}>{about.name}</h1>
             <p>
               {about.description}

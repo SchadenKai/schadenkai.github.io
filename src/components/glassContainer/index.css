@@ -5,7 +5,7 @@
     backdrop-filter: blur(6.4px);
     -webkit-backdrop-filter: blur(6.4px);
     color: rgb(238, 238, 238);
-    max-width: 765px;
+    max-width: 765px !important;
     width: auto;
     margin: 0 auto;
     padding: 4px 8px;
