@@ -38,7 +38,6 @@ export default function App() {
             <Skills />
             <ProjectsPage />
             <AwardsPage />
-            <BlogPage />
             <ContactsPage />
             <Footer />
           </main>
