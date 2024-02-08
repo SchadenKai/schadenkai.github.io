@@ -7,6 +7,7 @@ import ProjectsPage from "./pages/projects";
 import ContactsPage from "./pages/contactsPage";
 import Footer from "./layout/footer";
 import AwardsPage from "./pages/awards";
+import BlogPage from "./pages/blogs";
 import NavbarLayout from "./layout/navbar";
 import ThreeJSBackdrop from "./layout/threeJSBackdrop";
 import { ToastContainer } from "react-toastify";
@@ -38,6 +39,7 @@ export default function App() {
             <Skills />
             <ProjectsPage />
             <AwardsPage />
+            <BlogPage />
             <ContactsPage />
             <Footer />
           </main>
