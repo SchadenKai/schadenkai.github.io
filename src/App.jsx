@@ -15,7 +15,6 @@ import { ToastContainer } from "react-toastify";
 import "./data/meta";
 import { page_metadata } from "./data/meta";
 import 'react-toastify/dist/ReactToastify.css';
-import BlogPage from "./pages/blogs";
 
 gsap.registerPlugin(ScrollTrigger);
 

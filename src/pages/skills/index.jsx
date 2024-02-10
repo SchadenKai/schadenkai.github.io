@@ -5,7 +5,7 @@ import GlassContainer from "../../components/glassContainer";
 
 export default function Skills() {
   return (
-    <div className="w- d-flex align-items-center justify-content-center">
+    <div className="w-100 h-auto d-flex align-items-center justify-content-center">
       <div id="skills" className="w-100 h-auto mb-5 p-4">
         <GlassContainer className="skills_container">
           <p>Frontend (Web)</p>

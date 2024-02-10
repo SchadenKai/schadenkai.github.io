@@ -1,24 +1,25 @@
 #blog-container {
-    #blogs {
-        background-color: rgba(0, 0, 0, 0.579);
-        border-radius: 15px;
+  #blog-item {
+    background-color: rgba(0, 0, 0, 0.579);
+    border-radius: 15px;
+  }
+  p {
+    color: #f1f1f1;
+  }
+  div {
+    img {
+      height: 50px;
+      width: auto;
+      border-radius: 100%;
     }
-    p {
-        color: #f1f1f1;
+    #username,
+    #article-date {
+      font-size: 12px;
+      color: rgb(175, 175, 175);
     }
-    div {
-        img {
-            height: 50px;
-            width: auto;
-            border-radius: 100%;
-        }
-        #username, #article-date {
-            font-size: 12px;
-            color: rgb(175, 175, 175);
-        }
-        #description {
-            font-size : 16px;
-            margin-top: 12px;
-        }
+    #description {
+      font-size: 16px;
+      margin-top: 12px;
     }
+  }
 }

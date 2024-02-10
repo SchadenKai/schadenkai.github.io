@@ -3,24 +3,26 @@ import "./index.css";
 
 export default function BlogPage() {
   const [data, setData] = useState([]);
-  const [showBlogs, setShowBlogs] = useState(1);
+  const [showBlogs, setShowBlogs] = useState(2);
   useEffect(() => {
     const apikey = import.meta.env.VITE_DEVTO_API;
     fetch(`https://dev.to/api/articles?username=kainoah`)
       .then((response) => response.json())
-      .then((parsedData) => setData(parsedData));
+      .then((parsedData) => setData(parsedData))
+      .then(() => console.log({"Data" : data}))
   }, []);
   return (
     <div
       id="blogs"
-      className="w-100 d-flex flex-column align-items-center justify-content-center mb-5"
+      className="w-100 h-auto d-flex flex-column align-items-center justify-content-center mb-5"
     >
-      <div id="blog-container" className="w-100 glass1 p-4 d-flex flex-column gap-3">
+      <div id="blog-container" className="w-100 h-auto glass1 p-4 d-flex flex-column gap-3">
         <h3 className="text-warning mb-4">Blogs</h3>
         {data.slice(0, showBlogs).map((item) => {
           return (
             <div
-              id="blogs"
+              key={item}
+              id="blog-item"
               className="p-4 border border-dark"
               style={{ cursor: "pointer" }}
               onClick={() => (location.href = `${item.url}`)}
@@ -47,7 +49,7 @@ export default function BlogPage() {
         {showBlogs == data.length ? (
           <button
             className="btn w-100 btn-danger"
-            onClick={() => setShowBlogs(1)}
+            onClick={() => setShowBlogs(2)}
           >
             + Less
           </button>

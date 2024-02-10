@@ -61,6 +61,10 @@ main {
   overflow-y: scroll;
 }
 
-.skills img {
-  max-width: 10px !important;
+#skills img {
+  max-width: 30px !important;
+}
+
+#skills, #projects, #blogs, #awards, #contacts {
+  min-height: 100vh;
 }

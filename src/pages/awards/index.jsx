@@ -7,7 +7,7 @@ export default function AwardsPage() {
   return (
     <div
       id="awards"
-      className="w-100 d-flex flex-column align-items-center mb-5"
+      className="w-100 h-auto d-flex flex-column align-items-center justify-content-center mb-5"
     >
       <div className="glass1 p-4">
         <h3 className="text-warning mb-4">Awards</h3>

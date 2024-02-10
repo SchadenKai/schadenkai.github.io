@@ -7,7 +7,7 @@ export default function ProjectsPage() {
   return (
     <section
       id="projects"
-      className="w-100 d-flex flex-column align-items-center mb-5"
+      className="w-100 h-auto d-flex flex-column align-items-center justify-content-center mb-5"
     >
       <div className="w-100 p-4 glass1 mb-5">
         <h2 className="mb-4 text-warning">Software Projects</h2>
