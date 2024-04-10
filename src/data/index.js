@@ -134,7 +134,7 @@ export const skills = {
     {
       name: "NextJS",
       imageUrl: "https://img.icons8.com/fluency/48/nextjs.png",
-      status: "learning",
+      status: "learned",
     },
   ],
   backend: [
@@ -161,6 +161,11 @@ export const skills = {
     {
       name: "Deno",
       imageUrl: "./img/icons/deno.svg",
+      status: "learned",
+    },
+    {
+      name: "Bun",
+      imageUrl: "./img/icons/bun.png",
       status: "learning",
     },
   ],
@@ -183,7 +188,7 @@ export const skills = {
     {
       name: "Supabase",
       imageUrl: "./img/icons/supabase.svg",
-      status: "learning",
+      status: "learned",
     },
   ],
   mobile: [
@@ -216,7 +221,7 @@ export const skills = {
     {
       name: "Docker",
       imageUrl: "./img/icons/docker.svg",
-      status: "learning",
+      status: "learned",
     },
     {
       name: "Linux",
