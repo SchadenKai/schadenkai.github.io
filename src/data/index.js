@@ -1,7 +1,7 @@
 export const about = {
   name: "Kairus Noah E. Tecson",
   description:
-    "A Full-stack developer and a 4th year Computer Science student in Batangas State University, Philippines 🏫. Aspiring to become a Software Engineer and a ML/AI Engineer. Currently interested in Data science and, AI and Machine learning.",
+    "CS Graduate from Batangas State University, Philippines 🏫. Software Engineer and a ML/AI Engineer. Currently interested in Data science and, AI and Machine learning.",
   imageUrl: "./img/profile_img.jpg",
 };
 
@@ -104,7 +104,7 @@ export const skills = {
     {
       name: "ReactJS",
       imageUrl: "./img/icons/react.svg",
-      status: "learned",
+      status: "proficient",
     },
     {
       name: "ThreeJS",
@@ -134,24 +134,24 @@ export const skills = {
     {
       name: "NextJS",
       imageUrl: "https://img.icons8.com/fluency/48/nextjs.png",
-      status: "learned",
+      status: "proficient",
     },
   ],
   backend: [
     {
       name: "ExpressJS",
       imageUrl: "./img/icons/express.png",
-      status: "learned",
+      status: "proficient",
     },
     {
       name: "NodeJS",
       imageUrl: "./img/icons/node_js.svg",
-      status: "learned",
+      status: "proficient",
     },
     {
       name: "FastAPI",
       imageUrl: "./img/icons/fastapi.svg",
-      status: "learned",
+      status: "proficient",
     },
     {
       name: "JSON Web Tokens",
@@ -173,7 +173,7 @@ export const skills = {
     {
       name: "Firebase Firestore",
       imageUrl: "./img/icons/firestore.svg",
-      status: "learned",
+      status: "proficient",
     },
     {
       name: "MySQL",
@@ -188,7 +188,7 @@ export const skills = {
     {
       name: "Supabase",
       imageUrl: "./img/icons/supabase.svg",
-      status: "learned",
+      status: "proficient",
     },
   ],
   mobile: [
@@ -196,11 +196,6 @@ export const skills = {
       name: "Ionic (React)",
       imageUrl: "./img/icons/ionic.svg",
       status: "learned",
-    },
-    {
-      name: "Flutter",
-      imageUrl: "https://img.icons8.com/color/48/flutter.png",
-      status: "learning",
     },
   ],
   dev_ops: [
@@ -238,7 +233,7 @@ export const skills = {
     {
       name: "Typescript",
       imageUrl: "./img/icons/typescript.svg",
-      status: "learned",
+      status: "proficient",
     },
     {
       name: "Python",
@@ -265,12 +260,17 @@ export const skills = {
     {
       name: "Firebase",
       imageUrl: "./img/icons/firebase.svg",
-      status: "learned",
+      status: "proficient",
     },
     {
       name: "Google Cloud",
       imageUrl: "./img/icons/google-cloud.svg",
       status: "learned",
+    },
+    {
+      name: "AWS",
+      imageUrl: "./img/icons/aws-logo.png",
+      status: "proficient",
     },
   ],
   tools: [
@@ -287,6 +287,38 @@ export const skills = {
     {
       name: "Power BI",
       imageUrl: "./img/icons/power-bi.svg",
+      status: "learned",
+    },
+  ],
+  ml_ai: [
+    {
+      name: "Pandas",
+      imageUrl: "./img/icons/pandas.svg",
+      status: "learned",
+    },
+    {
+      name: "Numpy",
+      imageUrl: "./img/icons/numpy.svg",
+      status: "learned",
+    },
+    {
+      name: "Matplotlib",
+      imageUrl: "./img/icons/matplotlib.png",
+      status: "learned",
+    },
+    {
+      name: "Scikit Learn",
+      imageUrl: "./img/icons/scikit-learn.png",
+      status: "learned",
+    },
+    {
+      name: "Pytorch",
+      imageUrl: "./img/icons/pytorch.svg",
+      status: "learned",
+    },
+    {
+      name: "Beautiful Soup",
+      imageUrl: "./img/icons/beautifulsoup.webp",
       status: "learned",
     },
   ],

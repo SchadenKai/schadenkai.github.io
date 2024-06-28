@@ -199,6 +199,30 @@ export default function Skills() {
             ))}
           </div>
         </GlassContainer>
+        <GlassContainer className="skills_container">
+          <p>ML/AI Tools and Tech</p>
+          <div>
+            {skills.ml_ai.map((data) => (
+              <div
+                key={data.name}
+                className={
+                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  data.status
+                }
+              >
+                <img
+                  key={data.name}
+                  src={data.imageUrl}
+                  alt={"Icon of" + data.name}
+                  title={data.name}
+                />
+                <p className="m-0 fs-6" key={data.name}>
+                  {data.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        </GlassContainer>
       </div>
     </div>
   );

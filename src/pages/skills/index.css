@@ -26,31 +26,24 @@
 
 .skills_container {
   padding: 8px 16px !important;
+  align-items: center;
+  /* Pill container for each entry */
   & div div {
-    max-height: 40px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 15px;
     & img {
       object-fit: contain;
-      width: 30px;
-      margin-bottom: 4px;
+      height: 100%;
+      width: auto;
     }
   }
-  .learning {
-    text-decoration: line-through !important;
+  .proficient {
     background-color: rgb(37, 129, 57) !important;
-    padding: 10px;
-    padding-bottom: 0px;
-    border-radius: 15px;
-    img {
-      filter: grayscale(100%);
-    }
-  }
-  .s1 {
-    background: rgb(31, 255, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(31, 255, 0, 1) 0%,
-      rgba(78, 255, 0, 0.8799894957983193) 20%,
-      rgba(0, 0, 0, 0) 20%
-    );
   }
 }
