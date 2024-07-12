@@ -14,7 +14,7 @@ export default function AwardsPage() {
         {awards.slice(0, shownAwards).map((award) => {
           return (
             <div key={award.name} className="w-100 mb-4">
-              <div className="d-flex flex-column">
+              <div className="d-flex flex-column me-2">
                 <h3>{award.name + " " + award.date}</h3>
                 <h5>{"🏢 " + award.issuer}</h5>
                 <h6>{"📍 " + award.location}</h6>
