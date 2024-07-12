@@ -380,12 +380,12 @@ export const awards = [
     ],
   },
   {
-    name: "ASCENT'24 - The Annual Student Conference for Engineering and Technology 2024",
+    name: "ASCENT'24 - The Annual Student Conference for Engineering and Technology",
     issuer: "Batangas State University - The National Engineering University",
     location: "Batangas State University Alangilan campus - STEER Hub Building",
     description:
       "The conference involves presentation of thesis that excels amongst their respective colleges, especially studies that involves targetting SDG's / Sustainable Development Goals.",
-    date: "2023",
+    date: "2024",
     imageUrl: [
       "./img/awards/ascent-24.jpg"
     ],
