@@ -3,50 +3,68 @@ import { projects } from "../../data";
 import "./index.css";
 
 export default function ProjectsPage() {
-  const [shownProjects, setShownProjects] = useState(1);
   return (
     <section
       id="projects"
-      className="w-100 h-auto d-flex flex-column align-items-center justify-content-center mb-5"
+      className="w-full h-auto flex flex-column items-center justify-center mb-5"
     >
-      <div className="w-100 p-4 glass1 mb-5">
-        <h2 className="mb-4 text-warning">Software Projects</h2>
-        {projects.slice(0, shownProjects).map((project) => {
+      <h2 className="mb-4 text-6xl font-extrabold text-green-100">
+        Software Projects
+      </h2>
+      <div
+        id="project-section"
+        className="w-full grid grid-cols-2 gap-4 max-w-[1100px] mb-5"
+      >
+        {projects.map((project) => {
           return (
             <div
               key={project.name}
-              id="project-container"
-              className="w-100 row mb-5"
+              className="w-full h-auto flex-col py-6 px-4 glass1"
             >
-              <div className="me-4 d-flex flex-column">
-                {project.imageUrl.map((image) => {
-                  return (
-                    <img
-                      className="mb-3"
-                      style={{ width: "100%", objectFit: "contain" }}
-                      src={image}
-                      alt={"Image of" + project.name}
-                    />
-                  );
-                })}
+              <div id="project-container" className="w-full">
+                <div className="me-4 flex flex-col">
+                  {project.imageUrl.map((image) => {
+                    return (
+                      <img
+                        className="mb-3"
+                        style={{ width: "100%", objectFit: "contain" }}
+                        src={image}
+                        alt={"Image of" + project.name}
+                      />
+                    );
+                  })}
+                </div>
+                <div className="flex flex-column">
+                  <h2 className="text-3xl font-extrabold mb-2">
+                    {project.name}
+                  </h2>
+                  <h5 className="text-success-emphasis font-semibold mb-2">
+                    👤 {project.position}
+                  </h5>
+                  <h5 className="text-info-emphasis font-semibold mb-2">
+                    📅 {project.year}
+                  </h5>
+                  <p className="text-base">{project.description}</p>
+                </div>
               </div>
-              <div className="d-flex flex-column">
-                <h3>{project.name}</h3>
-                <h5 className="text-danger">{project.position}</h5>
-                <p>{project.description}</p>
-                <div className="d-flex mt-2">
+              <div className="w-full">
+                <p className="mt-3 mb-2 text-yellow-300 font-semibold">
+                  Links:{" "}
+                </p>
+                <div className="flex mt-2 gap-3">
                   {project.links.map((link) => {
                     return (
                       <a
                         key={link.name}
-                        className=" me-3"
+                        className=" me-3 flex text-base gap-2"
                         href={link.url}
                         target="_blank"
                         rel="noreferrer"
                       >
                         <img
                           className="me-2"
-                          height="30px"
+                          height="24px"
+                          width="24px"
                           src={link.imageUrl}
                           alt={link.name}
                         />
@@ -55,16 +73,19 @@ export default function ProjectsPage() {
                     );
                   })}
                 </div>
-                <p className="mt-3 text-warning">Tech Stack used: </p>
+                <p className="mt-3 mb-2 text-yellow-300 font-semibold">
+                  Tech Stack used:{" "}
+                </p>
                 <div
-                  className="w-100 d-flex justify-content-start gap-3"
+                  className="w-full grid grid-flow-col-dense justify-content-start gap-3"
                   style={{ height: "30px" }}
                 >
                   {project.tech_stack.map((tech) => {
                     return (
                       <img
                         key={tech.name}
-                        height="100%"
+                        height="24px"
+                        width="24px"
                         src={tech.imageUrl}
                         alt={"Icon of" + tech.name}
                         title={tech.name}
@@ -76,21 +97,6 @@ export default function ProjectsPage() {
             </div>
           );
         })}
-        {shownProjects == projects.length ? (
-          <button
-            className="btn w-100 btn-danger"
-            onClick={() => setShownProjects(1)}
-          >
-            + Less
-          </button>
-        ) : (
-          <button
-            className="btn w-100 btn-success"
-            onClick={() => setShownProjects(projects.length)}
-          >
-            + More
-          </button>
-        )}
       </div>
     </section>
   );

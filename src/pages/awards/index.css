@@ -1,9 +1,13 @@
-#awards div div{
+#award-container {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%;
 }
 @media only screen and (max-width: 480px){
-    #awards div div{
+    #award-container{
         grid-template-columns: 1fr;
+    }
+    #award-section {
+        columns: 1;
+        padding : 0px 16px !important;
     }
 }

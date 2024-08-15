@@ -5,16 +5,16 @@ import GlassContainer from "../../components/glassContainer";
 
 export default function Skills() {
   return (
-    <div className="w-100 h-auto d-flex align-items-center justify-content-center">
-      <div id="skills" className="w-100 h-auto mb-5 p-4">
+    <div className="w-full h-auto flex items-center justify-center">
+      <div id="skills" className="w-full h-auto mb-5 p-4">
         <GlassContainer className="skills_container">
-          <p>Frontend (Web)</p>
+          <p className="font-extrabold text-xl my-2 mb-3">Frontend (Web)</p>
           <div>
             {skills.frontend_web.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >
@@ -32,13 +32,13 @@ export default function Skills() {
           </div>
         </GlassContainer>
         <GlassContainer className="skills_container">
-          <p>Backend</p>
+        <p className="font-extrabold text-xl my-2 mb-3">Backend</p>
           <div>
             {skills.backend.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >
@@ -56,13 +56,13 @@ export default function Skills() {
           </div>
         </GlassContainer>
         <GlassContainer className="skills_container">
-          <p>Database</p>
+        <p className="font-extrabold text-xl my-2 mb-3">Database</p>
           <div>
             {skills.database.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >
@@ -80,13 +80,13 @@ export default function Skills() {
           </div>
         </GlassContainer>
         <GlassContainer className="skills_container">
-          <p>DevOps</p>
+        <p className="font-extrabold text-xl my-2 mb-3">DevOps</p>
           <div>
             {skills.dev_ops.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >
@@ -104,13 +104,13 @@ export default function Skills() {
           </div>
         </GlassContainer>
         <GlassContainer className="skills_container">
-          <p>Cloud</p>
+        <p className="font-extrabold text-xl my-2 mb-3">Cloud</p>
           <div>
             {skills.cloud.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >
@@ -128,13 +128,13 @@ export default function Skills() {
           </div>
         </GlassContainer>
         <GlassContainer className="skills_container">
-          <p>Mobile</p>
+        <p className="font-extrabold text-xl my-2 mb-3">Mobile</p>
           <div>
             {skills.mobile.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >
@@ -152,13 +152,13 @@ export default function Skills() {
           </div>
         </GlassContainer>
         <GlassContainer className="skills_container">
-          <p>Tools</p>
+        <p className="font-extrabold text-xl my-2 mb-3">Tools</p>
           <div>
             {skills.tools.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >
@@ -176,13 +176,13 @@ export default function Skills() {
           </div>
         </GlassContainer>
         <GlassContainer className="skills_container">
-          <p>Languages</p>
+        <p className="font-extrabold text-xl my-2 mb-3">Languages</p>
           <div>
             {skills.languages.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >
@@ -200,13 +200,13 @@ export default function Skills() {
           </div>
         </GlassContainer>
         <GlassContainer className="skills_container">
-          <p>ML/AI Tools and Tech</p>
+        <p className="font-extrabold text-xl my-2 mb-3">AI / ML</p>
           <div>
             {skills.ml_ai.map((data) => (
               <div
                 key={data.name}
                 className={
-                  "d-flex w-100 w-100 justify-content-start gap-4 mb-1 " +
+                  "flex w-full justify-content-start gap-4 mb-1 " +
                   data.status
                 }
               >

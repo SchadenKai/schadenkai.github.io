@@ -3,46 +3,51 @@ import { awards } from "../../data";
 import "./index.css";
 
 export default function AwardsPage() {
-  const [shownAwards, setShownAwards] = useState(1);
   return (
     <div
       id="awards"
-      className="w-100 h-auto d-flex flex-column align-items-center justify-content-center mb-5"
+      className="w-100 h-auto flex flex-column items-center justify-center mb-5"
     >
-      <div className="glass1 p-4">
-        <h3 className="text-warning mb-4">Awards</h3>
-        {awards.slice(0, shownAwards).map((award) => {
+      <h2 className="mb-4 text-6xl font-extrabold text-green-100">Awards</h2>
+      <div id="award-section" className="w-full columns-2 gap-4 max-w-[1100px] mb-5">
+        {awards.map((awards) => {
           return (
-            <div key={award.name} className="w-100 mb-4">
-              <div className="d-flex flex-column me-2">
-                <h3>{award.name + " " + award.date}</h3>
-                <h5>{"🏢 " + award.issuer}</h5>
-                <h6>{"📍 " + award.location}</h6>
-                <p>{award.description}</p>
-              </div>
-              <div className="d-flex flex-column">
-                {award.imageUrl.map((url) => {
-                  return <img width="100%" src={url} alt={award.name} />;
-                })}
+            <div
+              key={awards.name}
+              className="w-full h-auto flex-col py-6 px-4 mb-4 glass1"
+            >
+              <div id="award-container" className="w-full">
+                <div className="me-4 flex flex-col">
+                  {awards.imageUrl.map((image) => {
+                    return (
+                      <img
+                        className="mb-3"
+                        style={{ width: "100%", objectFit: "contain" }}
+                        src={image}
+                        alt={"Image of" + awards.name}
+                      />
+                    );
+                  })}
+                </div>
+                <div className="flex flex-column">
+                  <h2 className="text-3xl font-extrabold mb-2">
+                    {awards.name}
+                  </h2>
+                  <h5 className="text-success-emphasis font-semibold mb-2">
+                    🏫 {awards.issuer}
+                  </h5>
+                  <h5 className="text-info-emphasis font-semibold mb-2">
+                    📅 {awards.date}
+                  </h5>
+                  <h5 className="text-info-emphasis font-semibold mb-2">
+                    🗺️ {awards.location}
+                  </h5>
+                  <p className="text-base">{awards.description}</p>
+                </div>
               </div>
             </div>
           );
         })}
-        {shownAwards == awards.length ? (
-          <button
-            className="btn w-100 btn-danger"
-            onClick={() => setShownAwards(1)}
-          >
-            + Less
-          </button>
-        ) : (
-          <button
-            className="btn w-100 btn-success"
-            onClick={() => setShownAwards(awards.length)}
-          >
-            + More
-          </button>
-        )}
       </div>
     </div>
   );

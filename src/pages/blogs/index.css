@@ -1,8 +1,4 @@
 #blog-container {
-  #blog-item {
-    background-color: rgba(0, 0, 0, 0.579);
-    border-radius: 15px;
-  }
   p {
     color: #f1f1f1;
   }

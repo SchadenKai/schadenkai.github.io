@@ -1,7 +1,7 @@
 export const about = {
   name: "Kairus Noah E. Tecson",
   description:
-    "CS Graduate from Batangas State University, Philippines 🏫. Software Engineer and a ML/AI Engineer. Currently interested in Data science and, AI and Machine learning.",
+    "Computer Science graduate from Batangas State University - TNEU, Philippines. Software Engineer and a ML/AI Engineer. Currently interested in Data science and, AI and Machine learning.",
   imageUrl: "./img/profile_img.jpg",
 };
 
@@ -41,29 +41,30 @@ export const emailJSConfig = {
 };
 
 export const blenderModel = {
-  modelPath: "./magical_find.glb",
+  modelPath: "./baker_and_the_bridge.glb",
   type: "glb",
 };
 
 export const threeJSConfig = {
-  scale: "8",
-  modelPosition: [0, 0, 0],
-  rotationSpeed: 0.0005,
+  scale: "2",
+  modelPosition: [0, -10, 0],
+  rotationSpeed: 0.0003,
 };
 
 export const modelViewerConfig = {
   ambientLight: {
-    intensity: 1,
-    color: null,
+    intensity: 0,
+    color: "blue",
   },
   directionalLight: {
-    intensity: 1,
-    color: "white",
-    position: [5, 0, 5],
+    intensity: 0,
+    color: "blue",
+    position: [10, 10, 15],
   },
   camera: {
-    position: [0, 40, 10],
+    position: [40, 15, 10],
   },
+  exposure : -1.64
 };
 
 export const socialLinks = [
@@ -157,28 +158,13 @@ export const skills = {
       name: "JSON Web Tokens",
       imageUrl: "./img/icons/json-web-token.svg",
       status: "learned",
-    },
-    {
-      name: "Deno",
-      imageUrl: "./img/icons/deno.svg",
-      status: "learned",
-    },
-    {
-      name: "Bun",
-      imageUrl: "./img/icons/bun.png",
-      status: "learning",
-    },
+    }
   ],
   database: [
     {
       name: "Firebase Firestore",
       imageUrl: "./img/icons/firestore.svg",
       status: "proficient",
-    },
-    {
-      name: "MySQL",
-      imageUrl: "./img/icons/mysql.svg",
-      status: "learned",
     },
     {
       name: "PostgreSQL",
@@ -241,16 +227,6 @@ export const skills = {
       status: "learned",
     },
     {
-      name: "C++",
-      imageUrl: "./img/icons/c++.svg",
-      status: "learned",
-    },
-    {
-      name: "Kotlin",
-      imageUrl: "./img/icons/kotlin.svg",
-      status: "learned",
-    },
-    {
       name: "PHP",
       imageUrl: "./img/icons/php.svg",
       status: "learned",
@@ -289,6 +265,11 @@ export const skills = {
       imageUrl: "./img/icons/power-bi.svg",
       status: "learned",
     },
+    {
+      name: "Wordpress",
+      imageUrl : "./img/icons/wordpress.svg",
+      status: "learned"
+    }
   ],
   ml_ai: [
     {
@@ -394,10 +375,51 @@ export const awards = [
 
 export const projects = [
   {
-    name: "ArteMIS : Waste Management Information Sytem",
+    name: "Bath and Bark: Ecommerce Management System",
     description:
-      "ArteMIS is a wide ecosystem that offers smart waste management system. Its goal is to automate waste management and offers critical insights on waste management status on the environment. ArteMIS offers three products, mobile app, web app, and IoT Trash bin.",
+      "This is a commission project that features both admin and client side functionality. It is integrated with different features needed in managing an ecommerce. Worked as the backend developer and the partial frontend develop of the project. I am responsible for setting up the backend infrastructure, database, deployment, and connecting the frontend to the backend.",
+    position: "Backend developer",
+    year: "2024",
+    imageUrl: [
+      "./img/projects/bnb-1.png",
+      "./img/projects/bnb-2.png",
+      "./img/projects/bnb-3.png"
+    ],
+    links: [
+      {
+        name: "Website",
+        url: "https://bath-and-bark.vercel.app/",
+        imageUrl: "./img/icons/web-icon.png",
+        sideNote: "Web App",
+      },
+      {
+        name: "Github - API Server",
+        url: "https://github.com/SchadenKai/ems_api",
+        imageUrl: "./img/socials_icon/github.svg",
+        sideNote: "Github",
+      },
+    ],
+    tech_stack: [
+      {
+        name: "ReactJS",
+        imageUrl: "./img/icons/react.svg",
+      },
+      {
+        name: "Supabase",
+        imageUrl: "./img/icons/supabase.svg",
+      },
+      {
+        name: "FastAPI",
+        imageUrl: "./img/icons/fastapi.svg",
+      }
+    ],
+  },
+  {
+    name: "Artemis : Smart Waste Management System",
+    description:
+      "Worked as the lead developer and project leader for the Artemis project. Been part of working on the frontend using ReactJS: used different react hooks, state management, data visualization, fetch API, and more. Also worked on the backend using ExpressJS: used different middlewares, MVC pattern, RESTful API, and more. Used Firebase to deploy the backend, as a serverless function, and the frontend. Also used Firebase Firestore as the database.",
     position: "Project Leader / Lead Developer",
+    year: "2023",
     imageUrl: [
       "./img/projects/artemis_preview.png",
       "./img/projects/artemis-mobile-preview.png",
@@ -406,7 +428,7 @@ export const projects = [
       {
         name: "Website",
         url: "https://artemis-b18ae.web.app",
-        imageUrl: "./img/socials_icon/artemis-favicon.webp",
+        imageUrl: "./img/icons/web-icon.png",
         sideNote: "Web App",
       },
       {
@@ -446,8 +468,9 @@ export const projects = [
   {
     name: "I-Track : Student Progress Tracking System",
     description:
-      "I-Track is a web and mobile application that aims to track the academic performance of student and provide critical insights to the school. I-Track's main goal is to be a main platform for college students while being able to offer insights on the students.",
+      "Worked as the lead developer and project leader. mostly worked in the frontend where I used pure HTML, CSS and Bootstrap for the design, PHP for calling the API. I also used Javascript and Jquery for the dynamic behavior of the website. Also worked on the mobile app using Ionic framework.",
     position: "Project Leader / Lead Developer",
+    year: "2023",
     imageUrl: [
       "./img/projects/i-track-preview.png",
       "./img/projects/i-track-mobile-preview.png",
@@ -499,8 +522,10 @@ export const projects = [
   },
   {
     name: "ThreeJS Portfolio Website",
+    position: "Developer",
+    year: "2023",
     description:
-      "Personal Portfolio website using react. It showcase the use of ThreeJS to be able to display 3D background image and its behavior. The project uses React-three-fiber library, which integrates Three JS in ReactJS easily.",
+      "Built using ReactJS and GSAP for the background animations. I have built this project when I have taken an interest to learn ThreeJS, GSAP, and other 3D libraries and frameworks.",
     imageUrl: [
       "./img/projects/portfolio-threejs.gif",
       "./img/projects/portfolio-threejs-1.png",
@@ -536,6 +561,7 @@ export const projects = [
   },
   {
     name: "Space Exploration Website",
+    year: "2022",
     description:
       "Simple HTML, CSS, and Javascript website that showcases different planets in our solar system. The website is developed for a coding bootcamp as a side project.",
     position: "Developer",
@@ -570,6 +596,7 @@ export const projects = [
   },
   {
     name: "Pacman CLI Game",
+    year: "2021",
     description:
       "A simple Pacman insired CLI game built in C++. The project aims to showcase Greedy Algorithm which is applied in the enemy entities in the game.",
     position: "Developer",

@@ -49,14 +49,14 @@ export default function ContactsPage({ ref }) {
   return (
     <div
       id="contact"
-      className="d-flex flex-column justify-content-center align-items-center h-100 w-100"
+      className="flex flex-column justify-center items-center h-100 w-100"
     >
-      <div className="d-flex flex-column glass1 w-100">
-        <h1 className="text-warning mx-4 mt-4">Contact me</h1>
+      <div className="flex flex-column glass1 w-100">
+        <h1 className="text-warning text-2xl font-extrabold mx-4 my-3">Contact me</h1>
         <p className="mx-4">{emailJSConfig.contactsPreviewText}</p>
         <form
           style={{ borderRadius: "30px" }}
-          className="d-flex flex-column w-100 p-4 pt-0"
+          className="flex flex-column w-100 p-4 pt-0"
           ref={form}
           onSubmit={sendEmail}
         >

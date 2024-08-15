@@ -6,9 +6,9 @@ export default function ThreeJSBackdrop() {
     <div
       style={{
         height: "100vh",
-        zIndex: "-10",
+        zIndex: "-1",
       }}
-      className="w-100  d-flex justify-content-evenly align-items-center position-absolute top-0 start-0 bottom-0 end-0"
+      className="w-100  flex justify-content-evenly items-center position-absolute top-0 start-0 bottom-0 end-0 bg-slate-800"
     >
       <ModelViewer
         modelPath={blenderModel.modelPath}

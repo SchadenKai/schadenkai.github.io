@@ -1,22 +1,42 @@
-import {about, socialLinks} from '../data'
+import { useEffect, useState } from "react";
+import { about, socialLinks } from "../data";
 
 export default function LandingPage() {
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, [window.innerWidth]);
   return (
     // section wrapper
-    <section id="home" className="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+    <section
+      id="home"
+      className="w-full h-full flex flex-column items-center justify-center px-4"
+    >
       {/* card wrapper */}
-      <div className="glass1 h-auto"> 
-          {/* text column */}
-          <div className="py-4 px-5">
-            <h1 className='py-2' style={{ fontSize: "2.5rem" }}>{about.name}</h1>
-            <p>
-              {about.description}
-            </p>
-            <div className="w-100 d-flex mt-4">
+      <div className="glass1 h-auto flex flex-row px-4">
+        {width > 1100 && (
+          <div className="flex justify-center items-center">
+            <img
+              src="./img/profile_img.jpg"
+              className="rounded-circle"
+              width="auto"
+              alt="profile image"
+            />
+          </div>
+        )}
+        {/* text column */}
+        <div className="py-4 px-5">
+          <h1 className="py-2 font-extrabold" style={{ fontSize: "2.5rem" }}>
+            {about.name}
+          </h1>
+          <p>{about.description}</p>
+
+          {width > 1100 && (
+            <div className="w-100 flex mt-4">
               <p>Socials</p>
-              <p className="ms-4"> | </p>
-              <div className=" w-50 d-flex gap-1 justify-content-evenly">
-                {socialLinks.map(social => {
+              <p className="mx-4"> | </p>
+              <div className=" w-full flex flex-row gap-3">
+                {socialLinks.map((social) => {
                   return (
                     <a key={social.name} href={social.url} target="_blank">
                       <img
@@ -26,11 +46,12 @@ export default function LandingPage() {
                         alt={social.name}
                       />
                     </a>
-                  )
+                  );
                 })}
               </div>
             </div>
-          </div>  
+          )}
+        </div>
       </div>
     </section>
   );

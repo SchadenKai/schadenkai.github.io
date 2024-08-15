@@ -14,7 +14,7 @@ export default function NavbarLayout() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto d-flex gap-3">
+        <Nav className="ms-auto flex gap-3">
           {navLinks.map((data) => (
             <Nav.Link key={data.name} href={data.url}>
               {data.name}
