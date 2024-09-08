@@ -105,7 +105,7 @@ export const skills = {
     {
       name: "ReactJS",
       imageUrl: "./img/icons/react.svg",
-      status: "proficient",
+      status: "learned",
     },
     {
       name: "ThreeJS",
@@ -134,25 +134,30 @@ export const skills = {
     },
     {
       name: "NextJS",
-      imageUrl: "https://img.icons8.com/fluency/48/nextjs.png",
-      status: "proficient",
+      imageUrl: "./img/icons/nextjs.svg",
+      status: "learned",
+    },
+    {
+      name: "Schadcn UI",
+      imageUrl: "./img/icons/shadcn-ui.svg",
+      status: "learned",
     },
   ],
   backend: [
     {
       name: "ExpressJS",
       imageUrl: "./img/icons/express.png",
-      status: "proficient",
+      status: "learned",
     },
     {
       name: "NodeJS",
       imageUrl: "./img/icons/node_js.svg",
-      status: "proficient",
+      status: "learned",
     },
     {
       name: "FastAPI",
       imageUrl: "./img/icons/fastapi.svg",
-      status: "proficient",
+      status: "learned",
     },
     {
       name: "JSON Web Tokens",
@@ -164,7 +169,7 @@ export const skills = {
     {
       name: "Firebase Firestore",
       imageUrl: "./img/icons/firestore.svg",
-      status: "proficient",
+      status: "learned",
     },
     {
       name: "PostgreSQL",
@@ -174,7 +179,7 @@ export const skills = {
     {
       name: "Supabase",
       imageUrl: "./img/icons/supabase.svg",
-      status: "proficient",
+      status: "learned",
     },
   ],
   mobile: [
@@ -205,8 +210,13 @@ export const skills = {
       status: "learned",
     },
     {
+      name: "Nginx",
+      imageUrl: "./img/icons/nginx.svg",
+      status: "learned",
+    },
+    {
       name: "Linux",
-      imageUrl: "https://img.icons8.com/color/48/linux--v1.png",
+      imageUrl: "./img/icons/linux.svg",
       status: "learned",
     },
   ],
@@ -219,7 +229,7 @@ export const skills = {
     {
       name: "Typescript",
       imageUrl: "./img/icons/typescript.svg",
-      status: "proficient",
+      status: "learned",
     },
     {
       name: "Python",
@@ -236,7 +246,7 @@ export const skills = {
     {
       name: "Firebase",
       imageUrl: "./img/icons/firebase.svg",
-      status: "proficient",
+      status: "learned",
     },
     {
       name: "Google Cloud",
@@ -246,7 +256,7 @@ export const skills = {
     {
       name: "AWS",
       imageUrl: "./img/icons/aws-logo.png",
-      status: "proficient",
+      status: "learned",
     },
   ],
   tools: [
