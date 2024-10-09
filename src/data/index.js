@@ -160,10 +160,14 @@ export const skills = {
       status: "learned",
     },
     {
-      name: "JSON Web Tokens",
-      imageUrl: "./img/icons/json-web-token.svg",
+      name: "SQLAlchemy",
+      imageUrl: "./img/icons/sqlalchemy.png"
+    },
+    {
+      name: "Nginx",
+      imageUrl: "./img/icons/nginx.svg",
       status: "learned",
-    }
+    },
   ],
   database: [
     {
@@ -210,11 +214,6 @@ export const skills = {
       status: "learned",
     },
     {
-      name: "Nginx",
-      imageUrl: "./img/icons/nginx.svg",
-      status: "learned",
-    },
-    {
       name: "Linux",
       imageUrl: "./img/icons/linux.svg",
       status: "learned",
@@ -258,6 +257,11 @@ export const skills = {
       imageUrl: "./img/icons/aws-logo.png",
       status: "learned",
     },
+    {
+      name: "Azure",
+      imageUrl: "./img/icons/azure.svg",
+      status: "learned",
+    },
   ],
   tools: [
     {
@@ -279,7 +283,12 @@ export const skills = {
       name: "Wordpress",
       imageUrl : "./img/icons/wordpress.svg",
       status: "learned"
-    }
+    },
+    {
+      name: "Stripe",
+      imageUrl : "./img/icons/stripe.svg",
+      status: "learned"
+    },
   ],
   ml_ai: [
     {
@@ -385,9 +394,36 @@ export const awards = [
 
 export const projects = [
   {
-    name: "Bath and Bark: Ecommerce Management System",
+    name: "Credit Management System API",
     description:
-      "This is a commission project that features both admin and client side functionality. It is integrated with different features needed in managing an ecommerce. Worked as the backend developer and the partial frontend develop of the project. I am responsible for setting up the backend infrastructure, database, deployment, and connecting the frontend to the backend.",
+      "Backend API which is used to handle user credit balance and handle payments through Stripe python package as a payment infrastructure. It is built on event-driven architecture and deployed in Azure functions with Azure SQL database. Implemented secured routes through cookies and middlewares.",
+    position: "Backend developer",
+    year: "2024",
+    imageUrl: [
+      "./img/projects/credit-management-system-1.png",
+      "./img/projects/credit-management-system-2.png",
+    ],
+    links: [
+    ],
+    tech_stack: [
+      {
+        name: "FastAPI",
+        imageUrl: "./img/icons/fastapi.svg",
+      },
+      {
+        name: "SQLAlchemy",
+        imageUrl: "./img/icons/sqlalchemy.png",
+      },
+      {
+        name: "Azure",
+        imageUrl: "./img/icons/azure.svg",
+      }
+    ],
+  },
+  {
+    name: "Ecommerce Management System",
+    description:
+      "A project that features both admin and client side functionality. It is integrated with different features needed in managing an ecommerce. Worked as the backend developer and the partial frontend develop of the project. I am responsible for setting up the backend infrastructure, database, deployment, and connecting the frontend to the backend.",
     position: "Backend developer",
     year: "2024",
     imageUrl: [
@@ -433,6 +469,9 @@ export const projects = [
     imageUrl: [
       "./img/projects/artemis_preview.png",
       "./img/projects/artemis-mobile-preview.png",
+      "./img/projects/artemis-3.png",
+      "./img/projects/artemis-4.png"
+
     ],
     links: [
       {
