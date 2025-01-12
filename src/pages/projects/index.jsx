@@ -1,8 +1,49 @@
 import { useState } from "react";
 import { projects } from "../../data";
 import "./index.css";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
+
+const styles = {
+  modal: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "fixed",
+    left: 0,
+    right: 0,
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
+    zIndex: 1000,
+  },
+  modalImage: {
+    maxWidth: "90%",
+    maxHeight: "90%",
+  },
+  close: {
+    position: "absolute",
+    top: "20px",
+    right: "30px",
+    fontSize: "30px",
+    color: "#fff",
+    cursor: "pointer",
+  },
+};
 
 export default function ProjectsPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState("");
+
+  const openModal = (src) => {
+    console.info("Opening modal with image: ", src);
+    setCurrentImage(src);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setCurrentImage("");
+  };
   return (
     <section
       id="projects"
@@ -15,6 +56,14 @@ export default function ProjectsPage() {
         id="project-section"
         className="w-full grid grid-cols-2 gap-4 max-w-[1100px] mb-5"
       >
+        {isModalOpen && (
+          <div style={styles.modal}>
+            <button style={styles.close} onClick={closeModal}>
+              &times;
+            </button>
+            <img src={currentImage} alt="Expanded" style={styles.modalImage} />
+          </div>
+        )}
         {projects.map((project) => {
           return (
             <div
@@ -23,14 +72,27 @@ export default function ProjectsPage() {
             >
               <div id="project-container" className="w-full">
                 <div className="me-4 flex flex-col">
-                  {project.imageUrl.map((image) => {
+                  {project.imageUrl.map((image, idx) => {
                     return (
-                      <img
-                        className="mb-3"
-                        style={{ width: "100%", objectFit: "contain" }}
-                        src={image}
-                        alt={"Image of" + project.name}
-                      />
+                      <button
+                        className="w-full h-auto"
+                        key={image.src + idx}
+                        onClick={(e) => openModal(e.target.src)}
+                        tabIndex="0"
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            openModal(image.src);
+                          }
+                        }}
+                      >
+                        <img
+                          key={image.src}
+                          className="mb-3"
+                          style={{ width: "100%", objectFit: "contain" }}
+                          src={image}
+                          alt={"Image of" + project.name}
+                        />
+                      </button>
                     );
                   })}
                 </div>
@@ -38,6 +100,9 @@ export default function ProjectsPage() {
                   <h2 className="text-3xl font-extrabold mb-2">
                     {project.name}
                   </h2>
+                  <h5 className="text-success-emphasis font-semibold mb-2">
+                    📍 {project.location}
+                  </h5>
                   <h5 className="text-success-emphasis font-semibold mb-2">
                     👤 {project.position}
                   </h5>
@@ -52,38 +117,40 @@ export default function ProjectsPage() {
                   Links:{" "}
                 </p>
                 <div className="flex mt-2 gap-3">
-                  {project.links.map((link) => {
-                    return (
-                      <a
-                        key={link.name}
-                        className=" me-3 flex text-base gap-2"
-                        href={link.url}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          className="me-2"
-                          height="24px"
-                          width="24px"
-                          src={link.imageUrl}
-                          alt={link.name}
-                        />
-                        {link.sideNote}
-                      </a>
-                    );
-                  })}
+                  {project.links.length > 0
+                    ? project.links.map((link, idx) => {
+                        return (
+                          <a
+                            key={link.name + idx}
+                            className=" me-3 flex text-base gap-2"
+                            href={link.url}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <img
+                              className="me-2"
+                              height="24px"
+                              width="24px"
+                              src={link.imageUrl}
+                              alt={link.name}
+                            />
+                            {link.sideNote}
+                          </a>
+                        );
+                      })
+                    : "No links available"}
                 </div>
                 <p className="mt-3 mb-2 text-yellow-300 font-semibold">
                   Tech Stack used:{" "}
                 </p>
                 <div
-                  className="w-full grid grid-flow-col-dense justify-content-start gap-3"
+                  className="w-full grid grid-flow-col-dense justify-content-start items-center gap-3"
                   style={{ height: "30px" }}
                 >
-                  {project.tech_stack.map((tech) => {
+                  {project.tech_stack.map((tech, idx) => {
                     return (
                       <img
-                        key={tech.name}
+                        key={tech.name + idx}
                         height="24px"
                         width="24px"
                         src={tech.imageUrl}

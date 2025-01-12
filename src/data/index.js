@@ -81,7 +81,7 @@ export const socialLinks = [
   {
     name: "Github",
     url: "https://github.com/SchadenKai",
-    imageUrl: "./img/socials_icon/github.svg",
+    imageUrl: "./img/socials_icon/github.png",
   },
   {
     name: "LinkedIn",
@@ -89,6 +89,143 @@ export const socialLinks = [
     imageUrl: "./img/socials_icon/linkedin.svg",
   },
 ];
+
+export const work_experience = [
+  {
+    company: "CoolRiots",
+    logo: "./img/company_logo/coolriots_logo.jpg",
+    position: "Software Engineer",
+    location: "Remote - Singapore",
+    startDate: "2025",
+    endDate: "Present",
+    description: [
+      "Assigned on proposing a new approach for their existing AI product. Created Software Architecture and System Design, with a Proof of Concept for the project. Closely communicating with the team and the CTO for the project's progress."
+    ],
+    tech_stack: [
+      {
+        name: "FastAPI",
+        imageUrl: "./img/icons/fastapi.svg",
+      },
+      {
+        name: "SQLAlchemy",
+        imageUrl: "./img/icons/sqlalchemy.png",
+      },
+      {
+        name: "PostgreSQL",
+        imageUrl: "./img/icons/postgres.svg",
+      },
+      {
+        name: "OpenAI",
+        imageUrl: "./img/icons/openai.webp",
+      },
+      {
+        name: "NextJS",
+        imageUrl: "./img/icons/nextjs.svg",
+      }
+    ]
+  },
+  {
+    company: "ArnoldAI",
+    logo: "./img/company_logo/arnold_ai_logo.jpg",
+    position: "Development Lead",
+    location: "Remote - Vienna, Austria",
+    startDate: "2024",
+    endDate: "Present",
+    description: [
+      "Assigned on leading the sole development team of the startup company and responsible for overseeing and leading the development for the company's projects, keeping it on track on the project's timeline, vision, and objectives.",
+      "Developed on the main product, ArnoldAI - which is an AI platform, on both the frontend and backend side, leading to the release of the MVP version and following patch and minor updates.",
+      "Responsible for the deployment and maintenance of the products using both manual and CD pipeline process.",
+      "Set up the company's development process and workflow through developing work instructions, policies, and SOPs.",
+      "Evaluated open source projects and libraries and conceptualize features as part of the company's innovation and development process.",
+    ],
+    tech_stack: [
+      {
+        name: "NextJS",
+        imageUrl: "./img/icons/nextjs.svg",
+      },
+      {
+        name: "ReactJS",
+        imageUrl: "./img/icons/react.svg",
+      },
+      {
+        name: "FastAPI",
+        imageUrl: "./img/icons/fastapi.svg",
+      },
+      {
+        name: "SQLAlchemy",
+        imageUrl: "./img/icons/sqlalchemy.png",
+      },
+      {
+        name: "PostgreSQL",
+        imageUrl: "./img/icons/postgres.svg",
+      },
+      {
+        name: "Docker",
+        imageUrl: "./img/icons/docker.svg",
+      },
+      {
+        name: "AWS",
+        imageUrl: "./img/icons/aws-logo.png",
+      },
+      {
+        name: "Azure",
+        imageUrl: "./img/icons/azure.svg",
+      },
+      {
+        name: "Github",
+        imageUrl: "./img/icons/github.png",
+      },
+      {
+        name: "Git",
+        imageUrl: "./img/icons/git.svg",
+      },
+      {
+        name: "Github Actions",
+        imageUrl: "./img/icons/github_actions.png",
+      },
+      {
+        name: "Linux",
+        imageUrl: "./img/icons/linux.svg",
+      },
+      {
+        name: "Beautiful Soup",
+        imageUrl: "./img/icons/beautifulsoup.webp",
+      },
+      {
+        name: "OpenAI",
+        imageUrl: "./img/icons/openai.webp",
+      },
+      {
+        name: "Pandas",
+        imageUrl: "./img/icons/pandas.svg",
+      },
+      {
+        name: "Stripe",
+        imageUrl: "./img/icons/stripe.svg",
+      },
+      {
+        name: "Supabase",
+        imageUrl: "./img/icons/supabase.svg",
+      },
+      {
+        name: "Wordpress",
+        imageUrl: "./img/icons/wordpress.svg",
+      },
+      {
+        name: "Schadcn UI",
+        imageUrl: "./img/icons/schadcn-ui.png",
+      },
+      {
+        name: "Nginx",
+        imageUrl: "./img/icons/nginx.svg",
+      },
+      {
+        name: "Figma",
+        imageUrl: "./img/icons/figma.svg",
+      }
+    ]
+  }
+]
 
 export const skills = {
   frontend_web: [
@@ -139,7 +276,7 @@ export const skills = {
     },
     {
       name: "Schadcn UI",
-      imageUrl: "./img/icons/shadcn-ui.svg",
+      imageUrl: "./img/icons/schadcn-ui.png",
       status: "learned",
     },
   ],
@@ -201,7 +338,7 @@ export const skills = {
     },
     {
       name: "Github",
-      imageUrl: "./img/icons/github.svg",
+      imageUrl: "./img/icons/github.png",
       status: "learned",
     },
     {
@@ -291,6 +428,11 @@ export const skills = {
     },
   ],
   ml_ai: [
+    {
+      name: "OpenAI",
+      imageUrl: "./img/icons/openai.webp",
+      status: "learned",
+    },
     {
       name: "Pandas",
       imageUrl: "./img/icons/pandas.svg",
@@ -394,7 +536,44 @@ export const awards = [
 
 export const projects = [
   {
+    name: "Dynamic UI (Proof of Concept)",
+    location: "Project Proposal - CoolRiots",
+    description:
+      "A proof of concept project, currently under development, that aims to create a web app that can dynamically change its UI based on the user's preference. The project is built using FastAPI, OpenAI (moving to Langchain in the future) and NextJS - ReactJS - Typescript. The project is solely conceptualized and developed by me.",
+    position: "Backend developer",
+    year: "2025",
+    imageUrl: [
+      "./img/projects/dynamic-ui-1.gif",
+      "./img/projects/dynamic-ui-2.gif",
+    ],
+    links: [
+    ],
+    tech_stack: [
+      {
+        name: "FastAPI",
+        imageUrl: "./img/icons/fastapi.svg",
+      },
+      {
+        name: "SQLAlchemy",
+        imageUrl: "./img/icons/sqlalchemy.png",
+      },
+      {
+        name: "PostgreSQL",
+        imageUrl: "./img/icons/postgres.svg",
+      },
+      {
+        name: "OpenAI",
+        imageUrl: "./img/icons/openai.webp",
+      },
+      {
+        name: "NextJS",
+        imageUrl: "./img/icons/nextjs.svg",
+      }
+    ],
+  },
+  {
     name: "Credit Management System API",
+    location: "Commission / Company's Startup Partner Company - Patentopia",
     description:
       "Backend API which is used to handle user credit balance and handle payments through Stripe python package as a payment infrastructure. It is built on event-driven architecture and deployed in Azure functions with Azure SQL database. Implemented secured routes through cookies and middlewares.",
     position: "Backend developer",
@@ -417,11 +596,16 @@ export const projects = [
       {
         name: "Azure",
         imageUrl: "./img/icons/azure.svg",
-      }
+      },
+      {
+        name: "Stripe",
+        imageUrl: "./img/icons/stripe.svg",
+      },
     ],
   },
   {
-    name: "Ecommerce Management System",
+    name: "E-commerce Management System",
+    location: "Commission - College Capstone Project",
     description:
       "A project that features both admin and client side functionality. It is integrated with different features needed in managing an ecommerce. Worked as the backend developer and the partial frontend develop of the project. I am responsible for setting up the backend infrastructure, database, deployment, and connecting the frontend to the backend.",
     position: "Backend developer",
@@ -441,7 +625,7 @@ export const projects = [
       {
         name: "Github - API Server",
         url: "https://github.com/SchadenKai/ems_api",
-        imageUrl: "./img/socials_icon/github.svg",
+        imageUrl: "./img/socials_icon/github.png",
         sideNote: "Github",
       },
     ],
@@ -457,11 +641,24 @@ export const projects = [
       {
         name: "FastAPI",
         imageUrl: "./img/icons/fastapi.svg",
+      },
+      {
+        name: "SQLAlchemy",
+        imageUrl: "./img/icons/sqlalchemy.png",
+      },
+      {
+        name: "PostgreSQL",
+        imageUrl: "./img/icons/postgres.svg",
+      },
+      {
+        name: "Vercel",
+        imageUrl: "./img/icons/vercel.png",
       }
     ],
   },
   {
     name: "Artemis : Smart Waste Management System",
+    location: "College Project w/ Client - Environmental Management Unit - Batangas State University",
     description:
       "Worked as the lead developer and project leader for the Artemis project. Been part of working on the frontend using ReactJS: used different react hooks, state management, data visualization, fetch API, and more. Also worked on the backend using ExpressJS: used different middlewares, MVC pattern, RESTful API, and more. Used Firebase to deploy the backend, as a serverless function, and the frontend. Also used Firebase Firestore as the database.",
     position: "Project Leader / Lead Developer",
@@ -483,7 +680,7 @@ export const projects = [
       {
         name: "Github",
         url: "https://github.com/SchadenKai/ArteMIS-Waste-Management-System",
-        imageUrl: "./img/socials_icon/github.svg",
+        imageUrl: "./img/socials_icon/github.png",
         sideNote: "Github",
       },
     ],
@@ -516,6 +713,7 @@ export const projects = [
   },
   {
     name: "I-Track : Student Progress Tracking System",
+    location: "College Project",
     description:
       "Worked as the lead developer and project leader. mostly worked in the frontend where I used pure HTML, CSS and Bootstrap for the design, PHP for calling the API. I also used Javascript and Jquery for the dynamic behavior of the website. Also worked on the mobile app using Ionic framework.",
     position: "Project Leader / Lead Developer",
@@ -528,13 +726,13 @@ export const projects = [
       {
         name: "Github",
         url: "https://github.com/SchadenKai/I-Track-Web",
-        imageUrl: "./img/socials_icon/github.svg",
+        imageUrl: "./img/socials_icon/github.png",
         sideNote: "Frontend",
       },
       {
         name: "Github",
         url: "https://github.com/SchadenKai/I-Track-Mobile",
-        imageUrl: "./img/socials_icon/github.svg",
+        imageUrl: "./img/socials_icon/github.png",
         sideNote: "Mobile",
       },
     ],
@@ -568,104 +766,5 @@ export const projects = [
         imageUrl: "./img/icons/ionic.svg",
       },
     ],
-  },
-  {
-    name: "ThreeJS Portfolio Website",
-    position: "Developer",
-    year: "2023",
-    description:
-      "Built using ReactJS and GSAP for the background animations. I have built this project when I have taken an interest to learn ThreeJS, GSAP, and other 3D libraries and frameworks.",
-    imageUrl: [
-      "./img/projects/portfolio-threejs.gif",
-      "./img/projects/portfolio-threejs-1.png",
-    ],
-    links: [
-      {
-        name: "Website",
-        url: "https://schadenkai.github.io/",
-        imageUrl: "./img/icons/web-icon.png",
-        sideNote: "Website",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/SchadenKai/schadenkai.github.io",
-        imageUrl: "./img/socials_icon/github.svg",
-        sideNote: "Github",
-      },
-    ],
-    tech_stack: [
-      {
-        name: "ReactJS",
-        imageUrl: "./img/icons/react.svg",
-      },
-      {
-        name: "Bootstrap",
-        imageUrl: "./img/icons/bootstrap.svg",
-      },
-      {
-        name: "ThreeJS",
-        imageUrl: "./img/icons/threejs.png",
-      },
-    ],
-  },
-  {
-    name: "Space Exploration Website",
-    year: "2022",
-    description:
-      "Simple HTML, CSS, and Javascript website that showcases different planets in our solar system. The website is developed for a coding bootcamp as a side project.",
-    position: "Developer",
-    imageUrl: [
-      "./img/projects/space-website.png",
-      "./img/projects/space-website-1.png",
-    ],
-    links: [
-      {
-        name: "Github",
-        url: "https://schadenkai.github.io/space-exploration/",
-        imageUrl: "./img/icons/web-icon.png",
-        sideNote: "Website",
-      },
-      {
-        name: "Github",
-        url: "https://github.com/SchadenKai/space-exploration",
-        imageUrl: "./img/socials_icon/github.svg",
-        sideNote: "Github",
-      },
-    ],
-    tech_stack: [
-      {
-        name: "HTML",
-        imageUrl: "./img/icons/html.svg",
-      },
-      {
-        name: "CSS",
-        imageUrl: "./img/icons/css.svg",
-      },
-    ],
-  },
-  {
-    name: "Pacman CLI Game",
-    year: "2021",
-    description:
-      "A simple Pacman insired CLI game built in C++. The project aims to showcase Greedy Algorithm which is applied in the enemy entities in the game.",
-    position: "Developer",
-    imageUrl: [
-      "./img/projects/pacman-preview.png",
-      "./img/projects/pacman-preview-1.png",
-    ],
-    links: [
-      {
-        name: "Github",
-        url: "https://github.com/SchadenKai/PacmanCLI",
-        imageUrl: "./img/socials_icon/github.svg",
-        sideNote: "Github",
-      },
-    ],
-    tech_stack: [
-      {
-        name: "C++",
-        imageUrl: "./img/icons/c++.svg",
-      },
-    ],
-  },
+  }
 ];

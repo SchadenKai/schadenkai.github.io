@@ -9,6 +9,7 @@ import Footer from "./layout/footer";
 import AwardsPage from "./pages/awards";
 import BlogPage from "./pages/blogs";
 import NavbarLayout from "./layout/navbar";
+import WorkExperiencePage from "./pages/work_experience";
 import ThreeJSBackdrop from "./layout/threeJSBackdrop";
 import { ToastContainer } from "react-toastify";
 
@@ -44,6 +45,7 @@ export default function App() {
               <ToastContainer />
               <LandingPage />
               <Skills />
+              <WorkExperiencePage />
               <ProjectsPage />
               <AwardsPage />
               <BlogPage />

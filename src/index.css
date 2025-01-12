@@ -68,7 +68,7 @@ main {
   max-width: 30px !important;
 }
 
-#skills, #projects, #blogs, #awards, #contacts {
+#skills, #projects, #blogs, #awards, #contacts, #work-experience {
   min-height: 100vh;
 }
 
