@@ -15,6 +15,10 @@ export const navLinks = [
     url: "#skills",
   },
   {
+    name: "Experience",
+    url: "#work-experience",
+  },
+  {
     name: "Projects",
     url: "#projects",
   },
