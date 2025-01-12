@@ -547,6 +547,12 @@ export const projects = [
       "./img/projects/dynamic-ui-2.gif",
     ],
     links: [
+      {
+        name: "Github - API Server",
+        url: "https://github.com/SchadenKai/dynamic-ui",
+        imageUrl: "./img/socials_icon/github.png",
+        sideNote: "Github",
+      },
     ],
     tech_stack: [
       {

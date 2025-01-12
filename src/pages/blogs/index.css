@@ -19,3 +19,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 480px){
+  #blog-container {
+      grid-template-columns: 1fr;
+  }
+  #blogs {
+    padding : 0px 16px !important;
+  }
+}

@@ -7,7 +7,7 @@ export default function WorkExperiencePage() {
       id="work-experience"
       className="w-100 h-auto flex flex-column items-center justify-center mb-5"
     >
-      <h2 className="mb-4 text-6xl font-extrabold text-green-100">
+      <h2 className="text-center mb-4 text-6xl font-extrabold text-green-100">
         Work Experience
       </h2>
       <div

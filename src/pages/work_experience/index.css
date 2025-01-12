@@ -9,9 +9,6 @@
 @media only screen and (max-width: 480px){
   #work-experience-section{
       grid-template-columns: 1fr;
-  }
-  #work-experience-container {
-    grid-template-columns: 1fr;
-    padding : 0px 16px !important;
+      padding : 0px 16px !important;
   }
 }

@@ -49,7 +49,7 @@ export default function ProjectsPage() {
       id="projects"
       className="w-full h-auto flex flex-column items-center justify-center mb-5"
     >
-      <h2 className="mb-4 text-6xl font-extrabold text-green-100">
+      <h2 className="text-center mb-4 text-6xl font-extrabold text-green-100">
         Software Projects
       </h2>
       <div
@@ -97,19 +97,19 @@ export default function ProjectsPage() {
                   })}
                 </div>
                 <div className="flex flex-column">
-                  <h2 className="text-3xl font-extrabold mb-2">
+                  <h2 className="text-green-100 text-3xl font-extrabold mb-2">
                     {project.name}
                   </h2>
-                  <h5 className="text-success-emphasis font-semibold mb-2">
+                  <h5 className="text-green-100 text-success-emphasis font-semibold mb-2">
                     📍 {project.location}
                   </h5>
-                  <h5 className="text-success-emphasis font-semibold mb-2">
+                  <h5 className="text-green-100 text-success-emphasis font-semibold mb-2">
                     👤 {project.position}
                   </h5>
-                  <h5 className="text-info-emphasis font-semibold mb-2">
+                  <h5 className="text-green-100 text-info-emphasis font-semibold mb-2">
                     📅 {project.year}
                   </h5>
-                  <p className="text-base">{project.description}</p>
+                  <p className="text-green-100 text-base">{project.description}</p>
                 </div>
               </div>
               <div className="w-full">
@@ -138,7 +138,9 @@ export default function ProjectsPage() {
                           </a>
                         );
                       })
-                    : "No links available"}
+                    : (
+                      <p className="text-base text-green-100">No Links Available / Private</p>
+                    )}
                 </div>
                 <p className="mt-3 mb-2 text-yellow-300 font-semibold">
                   Tech Stack used:{" "}
