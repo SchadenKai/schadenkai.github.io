@@ -125,6 +125,10 @@ export const work_experience = [
       {
         name: "NextJS",
         imageUrl: "./img/icons/nextjs.svg",
+      },
+      {
+        name: "PydanticAI",
+        imageUrl: "./img/icons/pydanticai.png",
       }
     ]
   },
@@ -226,7 +230,31 @@ export const work_experience = [
       {
         name: "Figma",
         imageUrl: "./img/icons/figma.svg",
-      }
+      },
+      {
+        name: "PydanticAI",
+        imageUrl: "./img/icons/pydanticai.png",
+      },
+      {
+        name: "Langchain",
+        imageUrl: "./img/icons/langchain.png",
+      },
+      {
+        name: "LiteLLM",
+        imageUrl: "./img/icons/litellm.png",
+      },
+      {
+        name: "Traefik",
+        imageUrl: "./img/icons/traefik.webp",
+      },
+      {
+        name: "Expo",
+        imageUrl: "./img/icons/expo.webp",
+      },
+      {
+        name: "Hetzner",
+        imageUrl: "./img/icons/hetzner.png",
+      },
     ]
   }
 ]
@@ -309,6 +337,11 @@ export const skills = {
       imageUrl: "./img/icons/nginx.svg",
       status: "learned",
     },
+    {
+      name: "Traefik",
+      imageUrl: "./img/icons/traefik.webp",
+      status: "learned",
+    },
   ],
   database: [
     {
@@ -331,6 +364,16 @@ export const skills = {
     {
       name: "Ionic (React)",
       imageUrl: "./img/icons/ionic.svg",
+      status: "learned",
+    },
+    {
+      name: "React Native",
+      imageUrl: "./img/icons/react-native.png",
+      status: "learned",
+    },
+    {
+      name: "Expo",
+      imageUrl: "./img/icons/expo.webp",
       status: "learned",
     },
   ],
@@ -403,6 +446,11 @@ export const skills = {
       imageUrl: "./img/icons/azure.svg",
       status: "learned",
     },
+    {
+      name: "Hetzner",
+      imageUrl: "./img/icons/hetzner.png",
+      status: "learned",
+    },
   ],
   tools: [
     {
@@ -433,6 +481,26 @@ export const skills = {
   ],
   ml_ai: [
     {
+      name: "Langchain",
+      imageUrl: "./img/icons/langchain.png",
+      status: "learned",
+    },
+    {
+      name: "Langgraph",
+      imageUrl: "./img/icons/langgraph.png",
+      status: "learned",
+    },
+    {
+      name: "PydanticAI",
+      imageUrl: "./img/icons/pydanticai.png",
+      status: "learned",
+    },
+    {
+      name: "LiteLLM",
+      imageUrl: "./img/icons/litellm.png",
+      status: "learned",
+    },
+    {
       name: "OpenAI",
       imageUrl: "./img/icons/openai.webp",
       status: "learned",
@@ -460,11 +528,6 @@ export const skills = {
     {
       name: "Pytorch",
       imageUrl: "./img/icons/pytorch.svg",
-      status: "learned",
-    },
-    {
-      name: "Beautiful Soup",
-      imageUrl: "./img/icons/beautifulsoup.webp",
       status: "learned",
     },
   ],
