@@ -108,7 +108,12 @@ export const work_experience = [
     startDate: "January 2025",
     endDate: "February 2025",
     description: [
-      "Assigned on proposing a new approach for their existing AI product. Created Software Architecture and System Design, with a Proof of Concept for the project. Closely communicating with the team and the CTO for the project's progress."
+        "Led architecture redesign for a generative UI system that dynamically renders interactive dashboards and data visualizations from natural language queries.",
+        "Identified architectural issues in the existing approach and proposed a simplified direction - eliminated unnecessary database storage for UI components and removed SSR overhead in favor of client-side rendering",
+        "Delivered working MVP within 2 months demonstrating a single-agent system that generates JSON-based UI definitions, proving feasibility without over-engineering",
+        "Reduced system complexity from a proposed multi-agent architecture to a streamlined single-agent design integrated with existing microservices",
+        "Created comprehensive system design documentation and implementation handover materials",
+        "Presented architecture to engineering team across multiple countries; proposal was endorsed by leadership and adopted as the project's technical direction and roadmap"
     ],
     tech_stack: [
       {
@@ -128,8 +133,8 @@ export const work_experience = [
         imageUrl: "./img/icons/openai.webp",
       },
       {
-        name: "NextJS",
-        imageUrl: "./img/icons/nextjs.svg",
+        name: "ReactJS",
+        imageUrl: "./img/icons/react.svg",
       },
       {
         name: "PydanticAI",
@@ -145,11 +150,15 @@ export const work_experience = [
     startDate: "January 2024",
     endDate: "Present",
     description: [
-      "Assigned on leading the sole development team of the startup company and responsible for overseeing and leading the development for the company's projects, keeping it on track on the project's timeline, vision, and objectives.",
-      "Developed on the main product, ArnoldAI - which is an AI platform, on both the frontend and backend side, leading to the release of the MVP version and following patch and minor updates.",
-      "Responsible for the deployment and maintenance of the products using both manual and CD pipeline process.",
-      "Set up the company's development process and workflow through developing work instructions, policies, and SOPs.",
-      "Evaluated open source projects and libraries and conceptualize features as part of the company's innovation and development process.",
+        "Leading engineering for an AI platform providing chatbot agents, agent builder, and RAG systems for highly regulated industries.",
+        "Pioneer engineer who helped transform an open-source project into a proprietary platform targeting regulated markets, shipping MVP and driving post-MVP improvements for scale and stability",
+        "Managing a team of 8 (6 developers, 1 QA, 1 EA), overseeing all development while establishing Scrumban workflows, coding guidelines, Git branching strategies, and documentation standards for traceability and compliance",
+        "Architected cloud infrastructure for horizontal scaling - decoupled services across VMs with private network communication, increasing concurrent user capacity by 3-4x",
+        "Designed and shipped major platform features: market intelligence assistant with ReAct agentic flow, multi-workspace tenancy, multi-teamspace collaboration, agent memory layer, code interpreter tool, feature flag system, and security audit logs",
+        "Led migration from legacy LLM infrastructure to LangChain, introduced LangGraph for complex workflows and multi-agent architecture",
+        "Created system design artifacts (data flows, ERDs, information architecture, lo-fi designs) for features including assistant management, workspace management, and security logging",
+        "Reduced Docker build times by implementing BuildKit caching and migrating from pip to uv for dependency management",
+        "Established user feedback systems to capture insights from enterprise customers"
     ],
     tech_stack: [
       {
@@ -619,6 +628,44 @@ export const awards = [
 ];
 
 export const projects = [
+  {
+    name: "Chatman",
+    location: "Personal Learning Project",
+    description:
+      "AI-powered chatbot agent that can perform tasks similar to state of the art AI chatbot agents. Built using latest conventional way of building AI solutions, from AG-UI to MCP servers. This project is still ongoing and is primarily for learning purposes for exploring different Applied AI Solutions revolviing around chat agents such as RAG Systems, Agentic Workflows, Protocols, and more.",
+    position: "Fullstack Developer; Applied AI Engineer",
+    year: "2025",
+    imageUrl: [
+      "./img/projects/chat_man_1.png",
+      "./img/projects/chat_man_2.png",
+    ],
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/SchadenKai/chat-man",
+        imageUrl: "./img/socials_icon/github.png",
+        sideNote: "Github",
+      },
+    ],
+    tech_stack: [
+      {
+        name: "FastAPI",
+        imageUrl: "./img/icons/fastapi.svg",
+      },
+      {
+        name: "Langchain",
+        imageUrl: "./img/icons/langchain.png",
+      },
+      {
+        name: "Langgraph",
+        imageUrl: "./img/icons/langgraph.png",
+      },
+      {
+        name: "ReactJS",
+        imageUrl: "./img/icons/react.svg",
+      },
+    ],
+  },
   {
     name: "Dynamic UI (Proof of Concept)",
     location: "Project Proposal - CoolRiots",
