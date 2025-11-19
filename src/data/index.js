@@ -92,6 +92,11 @@ export const socialLinks = [
     url: "https://www.linkedin.com/in/kairus-tecson/",
     imageUrl: "./img/socials_icon/linkedin.svg",
   },
+  {
+    name: "Tiktok",
+    url: "https://www.tiktok.com/@noahkai",
+    imageUrl: "./img/socials_icon/tiktok.svg",
+  },
 ];
 
 export const work_experience = [
@@ -100,8 +105,8 @@ export const work_experience = [
     logo: "./img/company_logo/coolriots_logo.jpg",
     position: "Software Engineer",
     location: "Remote - Singapore",
-    startDate: "2025",
-    endDate: "Present",
+    startDate: "January 2025",
+    endDate: "February 2025",
     description: [
       "Assigned on proposing a new approach for their existing AI product. Created Software Architecture and System Design, with a Proof of Concept for the project. Closely communicating with the team and the CTO for the project's progress."
     ],
@@ -135,9 +140,9 @@ export const work_experience = [
   {
     company: "ArnoldAI",
     logo: "./img/company_logo/arnold_ai_logo.jpg",
-    position: "Development Lead",
+    position: "Head of Engineering",
     location: "Remote - Vienna, Austria",
-    startDate: "2024",
+    startDate: "January 2024",
     endDate: "Present",
     description: [
       "Assigned on leading the sole development team of the startup company and responsible for overseeing and leading the development for the company's projects, keeping it on track on the project's timeline, vision, and objectives.",
@@ -535,6 +540,18 @@ export const skills = {
 
 export const awards = [
   {
+    name: "Seminar: Beyond the Hype - The Real World of Generative AI and Language Models",
+    issuer: "Batangas State University - The National Engineering University",
+    location: "Batangas State University - Alangilan Campus",
+    description:
+      "The main objective is to introduce Generative AI and Language Models to Compputer Engineering students. This includes definition of what Generative AI and Language Models, technical overview of how it works, its history, technical concepts, and its real-world applications. The seminar also includes live coding session on how to use different capabilities of Language models through Langchain, from basic calling of LLM's to Agents.",
+    date: "2025",
+    imageUrl: [
+      "./img/awards/seminar_1.jpg",
+      "./img/awards/seminar_2.jpg",
+    ],
+  },
+  {
     name: "iSITE x StackLeague Programming Competition Champion",
     issuer: "StackLeague",
     location: "Lyceum of the Philippines - Laguna",
@@ -607,7 +624,7 @@ export const projects = [
     location: "Project Proposal - CoolRiots",
     description:
       "A proof of concept project, currently under development, that aims to create a web app that can dynamically change its UI based on the user's preference. The project is built using FastAPI, OpenAI (moving to Langchain in the future) and NextJS - ReactJS - Typescript. The project is solely conceptualized and developed by me.",
-    position: "Backend developer",
+    position: "Fullstack Developer; Applied AI Engineer",
     year: "2025",
     imageUrl: [
       "./img/projects/dynamic-ui-1.gif",
@@ -734,7 +751,7 @@ export const projects = [
     location: "College Project w/ Client - Environmental Management Unit - Batangas State University",
     description:
       "Worked as the lead developer and project leader for the Artemis project. Been part of working on the frontend using ReactJS: used different react hooks, state management, data visualization, fetch API, and more. Also worked on the backend using ExpressJS: used different middlewares, MVC pattern, RESTful API, and more. Used Firebase to deploy the backend, as a serverless function, and the frontend. Also used Firebase Firestore as the database.",
-    position: "Project Leader / Lead Developer",
+    position: "Project Leader / Lead Fullstack Developer",
     year: "2023",
     imageUrl: [
       "./img/projects/artemis_preview.png",
@@ -789,7 +806,7 @@ export const projects = [
     location: "College Project",
     description:
       "Worked as the lead developer and project leader. mostly worked in the frontend where I used pure HTML, CSS and Bootstrap for the design, PHP for calling the API. I also used Javascript and Jquery for the dynamic behavior of the website. Also worked on the mobile app using Ionic framework.",
-    position: "Project Leader / Lead Developer",
+    position: "Project Leader / Lead Frontend Developer",
     year: "2023",
     imageUrl: [
       "./img/projects/i-track-preview.png",
