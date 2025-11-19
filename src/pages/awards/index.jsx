@@ -9,7 +9,7 @@ export default function AwardsPage() {
       className="w-100 h-auto flex flex-column items-center justify-center mb-5"
     >
       <h2 className="mb-4 text-6xl font-extrabold text-green-100">Awards</h2>
-      <div id="award-section" className="w-full columns-2 gap-4 max-w-[1100px] mb-5">
+      <div id="award-section" className="w-full h-auto grid grid-cols-2 gap-4 max-w-[1100px] mb-5">
         {awards.map((awards) => {
           return (
             <div
